@@ -1,0 +1,87 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.11/site-packages/transformers/pytorch_utils.py:339: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  test_elements = torch.tensor(test_elements)
+
+============================================================
+Evaluating: RL-trained model + engineered prompt
+Split: test
+Temperature: 0.3
+============================================================
+
+Loaded 83 scenarios from test split
+Using default reward weights
+Device: mps
+Loading base model from /Users/ahmadavar/Desktop/aura-lite-posttraining/models/qwen2.5-1.5b-instruct ...
+Loading LoRA adapter from /Users/ahmadavar/Desktop/aura-lite-posttraining/models/trained_rl ...
+Adapter merged and unloaded.
+Model ready.
+
+Running inference (rl)...
+  [rl] 1/83: scn_0314  [rl] 2/83: scn_0074  [rl] 3/83: scn_0050  [rl] 4/83: scn_0313  [rl] 5/83: scn_0308  [rl] 6/83: scn_0040  [rl] 7/83: scn_0354  [rl] 8/83: scn_0055  [rl] 9/83: scn_0051  [rl] 10/83: scn_0355  [rl] 11/83: scn_0041  [rl] 12/83: scn_0063  [rl] 13/83: scn_0353  [rl] 14/83: scn_0057  [rl] 15/83: scn_0038  [rl] 16/83: scn_0062  [rl] 17/83: scn_0102  [rl] 18/83: scn_0031  [rl] 19/83: scn_0065  [rl] 20/83: scn_0356  [rl] 21/83: scn_0046  [rl] 22/83: scn_0375  [rl] 23/83: scn_0312  [rl] 24/83: scn_0069  [rl] 25/83: scn_0070  [rl] 26/83: scn_0053  [rl] 27/83: scn_0033  [rl] 28/83: scn_0078  [rl] 29/83: scn_0064  [rl] 30/83: scn_0044  [rl] 31/83: scn_0061  [rl] 32/83: scn_0072  [rl] 33/83: scn_0036  [rl] 34/83: scn_0073  [rl] 35/83: scn_0310  [rl] 36/83: scn_0309  [rl] 37/83: scn_0049  [rl] 38/83: scn_0058  [rl] 39/83: scn_0280  [rl] 40/83: scn_0045  [rl] 41/83: scn_0278  [rl] 42/83: scn_0039  [rl] 43/83: scn_0100  [rl] 44/83: scn_0035  [rl] 45/83: scn_0037  [rl] 46/83: scn_0029  [rl] 47/83: scn_0056  [rl] 48/83: scn_0030  [rl] 49/83: scn_0068  [rl] 50/83: scn_0386  [rl] 51/83: scn_0101  [rl] 52/83: scn_0071  [rl] 53/83: scn_0279  [rl] 54/83: scn_0383  [rl] 55/83: scn_0043  [rl] 56/83: scn_0054  [rl] 57/83: scn_0052  [rl] 58/83: scn_0367  [rl] 59/83: scn_0277  [rl] 60/83: scn_0276  [rl] 61/83: scn_0077  [rl] 62/83: scn_0076  [rl] 63/83: scn_0352  [rl] 64/83: scn_0048  [rl] 65/83: scn_0034  [rl] 66/83: scn_0067  [rl] 67/83: scn_0042  [rl] 68/83: scn_0275  [rl] 69/83: scn_0351  [rl] 70/83: scn_0311  [rl] 71/83: scn_0059  [rl] 72/83: scn_0047  [rl] 73/83: scn_0372  [rl] 74/83: scn_0032  [rl] 75/83: scn_0098  [rl] 76/83: scn_0066  [rl] 77/83: scn_0307  [rl] 78/83: scn_0379  [rl] 79/83: scn_0075  [rl] 80/83: scn_0099  [rl] 81/83: scn_0097  [rl] 82/83: scn_0060  [rl] 83/83: scn_0371
+Inference completed in 1119.7s
+
+Computing metrics...
+
+Confusion Matrix:
+                                     Predicted                    
+                       ASK    COMP   ESCAL    STEP   CLAIM  SEARCH
+ASK                      2       0       0       0       0      21
+COMP                     0       0       0       2       0       4
+ESCAL                    1       0       4       0       0       3
+STEP                     1       0       0       4       0      14
+CLAIM                    0       0       1       1       2       6
+SEARCH                   0       0       0       0       0      17
+
+============================================================
+EVALUATION SUMMARY: RL on TEST
+============================================================
+  Scenarios evaluated                 83
+  Valid outputs                       83
+  Format compliance                   1.0000
+  Composite reward (mean)             0.6573
+  Composite reward (std)              0.2044
+  Intent accuracy                     0.6627
+  Action accuracy (exact)             0.3494
+  Action accuracy (acceptable)        0.5301
+  Macro action F1                     0.3032
+  Action entropy                      1.1616
+  Missing info recall                 0.0000
+  Missing info precision              0.0000
+  Unnecessary question rate           0.5000
+
+Per-domain reward:
+    black_screen                   0.8323
+    liquid_damage                  0.7892
+    lost_stolen                    0.7132
+    data_transfer                  0.7058
+    charging                       0.6594
+    battery_drain                  0.5397
+
+Per-action P/R/F1:
+  Action                        Prec   Recall       F1  Support
+  ---------------------------------------------------------
+  ASK_CLARIFICATION           0.5000   0.0870   0.1481       23
+  COMPLETE                    0.0000   0.0000   0.0000        6
+  ESCALATE                    0.8000   0.5000   0.6154        8
+  PROVIDE_STEP                0.5714   0.2105   0.3077       19
+  ROUTE_CLAIM                 1.0000   0.2000   0.3333       10
+  SEARCH_KB                   0.2615   1.0000   0.4146       17
+
+============================================================
+PARITY TABLE (evaluation settings)
+============================================================
+  Condition                 rl
+  Split                     test
+  Base model                /Users/ahmadavar/Desktop/aura-lite-posttraining/models/qwen2.5-1.5b-instruct
+  Adapter path              /Users/ahmadavar/Desktop/aura-lite-posttraining/models/trained_rl
+  System prompt             ENGINEERED
+  Temperature               0.3
+  max_new_tokens            512
+  top_p                     0.9
+  Reward weights            default
+  Random seed               42
+  Timestamp                 2026-09-09T10:31:40
+============================================================
+
+Metrics saved to /Users/ahmadavar/Desktop/aura-lite-posttraining/results/rl_test_results.json
+Predictions saved to /Users/ahmadavar/Desktop/aura-lite-posttraining/results/rl_test_predictions.json

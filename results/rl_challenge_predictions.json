@@ -1,0 +1,520 @@
+[
+  {
+    "scenario_id": "challenge_001",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer reports a display issue where the screen shows nothing but is otherwise functioning normally.\",\n    \"intent_assessment\": \"black_screen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for troubleshooting steps related to black screens on Samsung devices.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer reports a display issue where the screen shows nothing but is otherwise functioning normally.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to black screens on Samsung devices."
+    },
+    "model_output": {
+      "reasoning": "The customer reports a display issue where the screen shows nothing but is otherwise functioning normally.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to black screens on Samsung devices."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_002",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing rapid battery drain, which suggests an urgent concern related to battery health.\",\n    \"intent_assessment\": \"battery_drain\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for relevant troubleshooting steps or policies regarding battery health issues.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing rapid battery drain, which suggests an urgent concern related to battery health.",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for relevant troubleshooting steps or policies regarding battery health issues."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing rapid battery drain, which suggests an urgent concern related to battery health.",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for relevant troubleshooting steps or policies regarding battery health issues."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_003",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing issues with getting juice into their iPhone 15, which suggests a problem with the charging port or cables.\",\n    \"intent_assessment\": \"battery_drain\",\n    \"missing_information\": [\n        \"details of the charging port cleaning attempt\",\n        \"information about the type of cables being used\"\n    ],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for 'charging_port_cleaning' and 'cable_troubleshoot' under the available KB topics.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with getting juice into their iPhone 15, which suggests a problem with the charging port or cables.",
+      "intent_assessment": "battery_drain",
+      "missing_information": [
+        "details of the charging port cleaning attempt",
+        "information about the type of cables being used"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging_port_cleaning' and 'cable_troubleshoot' under the available KB topics."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with getting juice into their iPhone 15, which suggests a problem with the charging port or cables.",
+      "intent_assessment": "battery_drain",
+      "missing_information": [
+        "details of the charging port cleaning attempt",
+        "information about the type of cables being used"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging_port_cleaning' and 'cable_troubleshoot' under the available KB topics."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_004",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer mentions that their phone's front glass was shattered due to an accident, which falls under the category of 'liquid_damage'. The conversation indicates that the customer's phone is still functional but needs immediate attention.\",\n    \"intent_assessment\": \"liquid_damage\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for liquid damage-related issues and solutions.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer mentions that their phone's front glass was shattered due to an accident, which falls under the category of 'liquid_damage'. The conversation indicates that the customer's phone is still functional but needs immediate attention.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for liquid damage-related issues and solutions."
+    },
+    "model_output": {
+      "reasoning": "The customer mentions that their phone's front glass was shattered due to an accident, which falls under the category of 'liquid_damage'. The conversation indicates that the customer's phone is still functional but needs immediate attention.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for liquid damage-related issues and solutions."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_005",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing intermittent Wi-Fi connectivity issues on their iPad Air, which suggests a potential network-related problem.\",\n    \"intent_assessment\": \"wireless_network\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for 'network_reset_steps' under the available KB topics to find troubleshooting steps for wireless network connectivity issues.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing intermittent Wi-Fi connectivity issues on their iPad Air, which suggests a potential network-related problem.",
+      "intent_assessment": "wireless_network",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'network_reset_steps' under the available KB topics to find troubleshooting steps for wireless network connectivity issues."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing intermittent Wi-Fi connectivity issues on their iPad Air, which suggests a potential network-related problem.",
+      "intent_assessment": "wireless_network",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'network_reset_steps' under the available KB topics to find troubleshooting steps for wireless network connectivity issues."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_006",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer mentions that their screen is cracked and won't charge, indicating immediate issues with the device. They also mention dropping it, which suggests potential safety concerns.\",\n    \"intent_assessment\": \"liquid_damage\",\n    \"missing_information\": [],\n    \"action\": \"ESCALATE\",\n    \"action_detail\": \"Escalate to a human specialist due to the combination of screen damage and potential drop-related issues.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer mentions that their screen is cracked and won't charge, indicating immediate issues with the device. They also mention dropping it, which suggests potential safety concerns.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Escalate to a human specialist due to the combination of screen damage and potential drop-related issues."
+    },
+    "model_output": {
+      "reasoning": "The customer mentions that their screen is cracked and won't charge, indicating immediate issues with the device. They also mention dropping it, which suggests potential safety concerns.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Escalate to a human specialist due to the combination of screen damage and potential drop-related issues."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_007",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing issues with their Google Pixel 8 phone that started after an update, specifically mentioning problems connecting to Wi-Fi and battery drain.\",\n    \"intent_assessment\": \"network_connection_issues\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for 'wifi_calling_setup' and 'dns_settings' under the available KB topics to find relevant troubleshooting steps.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their Google Pixel 8 phone that started after an update, specifically mentioning problems connecting to Wi-Fi and battery drain.",
+      "intent_assessment": "network_connection_issues",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'wifi_calling_setup' and 'dns_settings' under the available KB topics to find relevant troubleshooting steps."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their Google Pixel 8 phone that started after an update, specifically mentioning problems connecting to Wi-Fi and battery drain.",
+      "intent_assessment": "network_connection_issues",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'wifi_calling_setup' and 'dns_settings' under the available KB topics to find relevant troubleshooting steps."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_008",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer mentioned losing their phone and needing to transfer data to a new device, indicating an urgent need for assistance.\",\n    \"intent_assessment\": \"lost_stolen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for 'find_my_device' and 'remote_lock_wipe' under the 'lost_stolen' category to provide the customer with relevant troubleshooting steps.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer mentioned losing their phone and needing to transfer data to a new device, indicating an urgent need for assistance.",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'find_my_device' and 'remote_lock_wipe' under the 'lost_stolen' category to provide the customer with relevant troubleshooting steps."
+    },
+    "model_output": {
+      "reasoning": "The customer mentioned losing their phone and needing to transfer data to a new device, indicating an urgent need for assistance.",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'find_my_device' and 'remote_lock_wipe' under the 'lost_stolen' category to provide the customer with relevant troubleshooting steps."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_009",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing issues with their iPhone 15 Pro that include a cracked screen and flickering green lines on the display. The customer is unsure whether these problems are related to the crack or a separate issue. Given the nature of the complaint, which involves both hardware damage and potential software-related issues, the most appropriate course of action would be to provide a detailed explanation of how to check for the crack using a flashlight and guide the customer through the process.\",\n    \"intent_assessment\": \"screen_crack_and_flickering_lines\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Provide a detailed KB topic explaining how to check for a crack in the screen using a flashlight.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 Pro that include a cracked screen and flickering green lines on the display. The customer is unsure whether these problems are related to the crack or a separate issue. Given the nature of the complaint, which involves both hardware damage and potential software-related issues, the most appropriate course of action would be to provide a detailed explanation of how to check for the crack using a flashlight and guide the customer through the process.",
+      "intent_assessment": "screen_crack_and_flickering_lines",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Provide a detailed KB topic explaining how to check for a crack in the screen using a flashlight."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 Pro that include a cracked screen and flickering green lines on the display. The customer is unsure whether these problems are related to the crack or a separate issue. Given the nature of the complaint, which involves both hardware damage and potential software-related issues, the most appropriate course of action would be to provide a detailed explanation of how to check for the crack using a flashlight and guide the customer through the process.",
+      "intent_assessment": "screen_crack_and_flickering_lines",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Provide a detailed KB topic explaining how to check for a crack in the screen using a flashlight."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_010",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is expressing frustration due to prolonged issues with their phone not working properly after being on hold for an hour. They mention paying for insurance but feel that no one can assist them, indicating a lack of resolution.\",\n    \"intent_assessment\": \"black_screen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for troubleshooting steps related to phones not working properly.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is expressing frustration due to prolonged issues with their phone not working properly after being on hold for an hour. They mention paying for insurance but feel that no one can assist them, indicating a lack of resolution.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for troubleshooting steps related to phones not working properly."
+    },
+    "model_output": {
+      "reasoning": "The customer is expressing frustration due to prolonged issues with their phone not working properly after being on hold for an hour. They mention paying for insurance but feel that no one can assist them, indicating a lack of resolution.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for troubleshooting steps related to phones not working properly."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_011",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is frustrated that their Samsung Galaxy S24 will not charge despite trying cleaning the charging port and using a new cable. The conversation indicates that neither solution has worked, leading to an escalation towards a more severe issue.\",\n    \"intent_assessment\": \"lost_stolen\",\n    \"missing_information\": [],\n    \"action\": \"ESCALATE\",\n    \"action_detail\": \"Escalate to a professional technician for further inspection and potential hardware replacement.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is frustrated that their Samsung Galaxy S24 will not charge despite trying cleaning the charging port and using a new cable. The conversation indicates that neither solution has worked, leading to an escalation towards a more severe issue.",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Escalate to a professional technician for further inspection and potential hardware replacement."
+    },
+    "model_output": {
+      "reasoning": "The customer is frustrated that their Samsung Galaxy S24 will not charge despite trying cleaning the charging port and using a new cable. The conversation indicates that neither solution has worked, leading to an escalation towards a more severe issue.",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Escalate to a professional technician for further inspection and potential hardware replacement."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_012",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing an immediate issue with their newly purchased iPhone 16 where the screen has already died after only two days. The customer wants a replacement immediately.\",\n    \"intent_assessment\": \"black_screen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for information on how to replace a dead screen on an iPhone 16 within the first few days of purchase.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an immediate issue with their newly purchased iPhone 16 where the screen has already died after only two days. The customer wants a replacement immediately.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for information on how to replace a dead screen on an iPhone 16 within the first few days of purchase."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an immediate issue with their newly purchased iPhone 16 where the screen has already died after only two days. The customer wants a replacement immediately.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for information on how to replace a dead screen on an iPhone 16 within the first few days of purchase."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_013",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing issues connecting their iPhone 14 to Wi-Fi after multiple attempts to restart and reset network settings. The conversation indicates that other devices at home also work fine, suggesting an internal issue on the iPhone.\",\n    \"intent_assessment\": \"wifi_connection_issue\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for 'network_reset_steps' under the 'wifi_calling_setup' topic in the knowledge base.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues connecting their iPhone 14 to Wi-Fi after multiple attempts to restart and reset network settings. The conversation indicates that other devices at home also work fine, suggesting an internal issue on the iPhone.",
+      "intent_assessment": "wifi_connection_issue",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'network_reset_steps' under the 'wifi_calling_setup' topic in the knowledge base."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues connecting their iPhone 14 to Wi-Fi after multiple attempts to restart and reset network settings. The conversation indicates that other devices at home also work fine, suggesting an internal issue on the iPhone.",
+      "intent_assessment": "wifi_connection_issue",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'network_reset_steps' under the 'wifi_calling_setup' topic in the knowledge base."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_014",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing rapid battery drain despite multiple attempts at optimizing their device settings, indicating that the issue may be more complex than just simple optimization.\",\n    \"intent_assessment\": \"battery_drain\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for troubleshooting tips related to battery health issues on the Google Pixel 8.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing rapid battery drain despite multiple attempts at optimizing their device settings, indicating that the issue may be more complex than just simple optimization.",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for troubleshooting tips related to battery health issues on the Google Pixel 8."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing rapid battery drain despite multiple attempts at optimizing their device settings, indicating that the issue may be more complex than just simple optimization.",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for troubleshooting tips related to battery health issues on the Google Pixel 8."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_015",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer reported that their Galaxy Tab S9 screen went black after attempting various troubleshooting methods like force restarting, DFU mode, and USB connection. The customer did not mention any physical damage but indicated that nothing worked.\",\n    \"intent_assessment\": \"black_screen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for troubleshooting steps specifically related to the Galaxy Tab S9 model.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer reported that their Galaxy Tab S9 screen went black after attempting various troubleshooting methods like force restarting, DFU mode, and USB connection. The customer did not mention any physical damage but indicated that nothing worked.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps specifically related to the Galaxy Tab S9 model."
+    },
+    "model_output": {
+      "reasoning": "The customer reported that their Galaxy Tab S9 screen went black after attempting various troubleshooting methods like force restarting, DFU mode, and USB connection. The customer did not mention any physical damage but indicated that nothing worked.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps specifically related to the Galaxy Tab S9 model."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_016",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer describes a black screen issue along with a crack visible on the screen and some light showing in the corner.\",\n    \"intent_assessment\": \"screen_black_and_crack\",\n    \"missing_information\": [\n        \"crack_location\",\n        \"light_source_details\"\n    ],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for troubleshooting steps related to cracked screens and light sources.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer describes a black screen issue along with a crack visible on the screen and some light showing in the corner.",
+      "intent_assessment": "screen_black_and_crack",
+      "missing_information": [
+        "crack_location",
+        "light_source_details"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to cracked screens and light sources."
+    },
+    "model_output": {
+      "reasoning": "The customer describes a black screen issue along with a crack visible on the screen and some light showing in the corner.",
+      "intent_assessment": "screen_black_and_crack",
+      "missing_information": [
+        "crack_location",
+        "light_source_details"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to cracked screens and light sources."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_017",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer describes their phone getting wet in the rain and experiencing issues such as a muffled speaker and intermittent charging. This suggests that the phone may be affected by liquid damage.\",\n    \"intent_assessment\": \"liquid_damage\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the 'liquid_damage' topic under the 'liquid_damage_first_aid' category for guidance on how to handle the situation.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer describes their phone getting wet in the rain and experiencing issues such as a muffled speaker and intermittent charging. This suggests that the phone may be affected by liquid damage.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the 'liquid_damage' topic under the 'liquid_damage_first_aid' category for guidance on how to handle the situation."
+    },
+    "model_output": {
+      "reasoning": "The customer describes their phone getting wet in the rain and experiencing issues such as a muffled speaker and intermittent charging. This suggests that the phone may be affected by liquid damage.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the 'liquid_damage' topic under the 'liquid_damage_first_aid' category for guidance on how to handle the situation."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_018",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer describes a crack on their Motorola Edge screen without mentioning any drop or sitting incident, which suggests an accidental impact could be the cause.\",\n    \"intent_assessment\": \"damaged_screen\",\n    \"missing_information\": [\"details of how the screen got cracked\"],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for information related to accidental impacts causing screen cracks on Motorola Edge devices.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer describes a crack on their Motorola Edge screen without mentioning any drop or sitting incident, which suggests an accidental impact could be the cause.",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [
+        "details of how the screen got cracked"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for information related to accidental impacts causing screen cracks on Motorola Edge devices."
+    },
+    "model_output": {
+      "reasoning": "The customer describes a crack on their Motorola Edge screen without mentioning any drop or sitting incident, which suggests an accidental impact could be the cause.",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [
+        "details of how the screen got cracked"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for information related to accidental impacts causing screen cracks on Motorola Edge devices."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_019",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer has confirmed that their iPhone 15 Pro screen was shattered due to a drop on concrete. They have an active insurance policy through Asurion and want to file a claim for screen replacement.\",\n    \"intent_assessment\": \"damaged_screen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for the 'screen_replacement_claim' topic to find specific procedures or forms related to filing a claim for screen replacement under their insurance coverage.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has confirmed that their iPhone 15 Pro screen was shattered due to a drop on concrete. They have an active insurance policy through Asurion and want to file a claim for screen replacement.",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for the 'screen_replacement_claim' topic to find specific procedures or forms related to filing a claim for screen replacement under their insurance coverage."
+    },
+    "model_output": {
+      "reasoning": "The customer has confirmed that their iPhone 15 Pro screen was shattered due to a drop on concrete. They have an active insurance policy through Asurion and want to file a claim for screen replacement.",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for the 'screen_replacement_claim' topic to find specific procedures or forms related to filing a claim for screen replacement under their insurance coverage."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_020",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing connectivity issues on their Galaxy S23 that can be resolved by resetting the Wi-Fi settings.\",\n    \"intent_assessment\": \"wifi_network\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for 'network_reset_steps' under the known issue category 'wifi_network'.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing connectivity issues on their Galaxy S23 that can be resolved by resetting the Wi-Fi settings.",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'network_reset_steps' under the known issue category 'wifi_network'."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing connectivity issues on their Galaxy S23 that can be resolved by resetting the Wi-Fi settings.",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'network_reset_steps' under the known issue category 'wifi_network'."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_021",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer describes an incident where their iPad Pro was fully submerged in water for approximately 30 seconds, which matches the known issue category 'liquid_damage'. The customer also mentions that the device won't power on and has confirmed both the exposure type and insurance status.\",\n    \"intent_assessment\": \"liquid_damage\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the liquid_damage section of the knowledge base for appropriate first aid steps and any related tips or myths debunked by the company.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer describes an incident where their iPad Pro was fully submerged in water for approximately 30 seconds, which matches the known issue category 'liquid_damage'. The customer also mentions that the device won't power on and has confirmed both the exposure type and insurance status.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the liquid_damage section of the knowledge base for appropriate first aid steps and any related tips or myths debunked by the company."
+    },
+    "model_output": {
+      "reasoning": "The customer describes an incident where their iPad Pro was fully submerged in water for approximately 30 seconds, which matches the known issue category 'liquid_damage'. The customer also mentions that the device won't power on and has confirmed both the exposure type and insurance status.",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the liquid_damage section of the knowledge base for appropriate first aid steps and any related tips or myths debunked by the company."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_022",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer reported that the force restart was successful and their issue is now resolved. They thanked the support team.\",\n    \"intent_assessment\": \"black_screen\",\n    \"missing_information\": [],\n    \"action\": \"PROVIDE_STEP\",\n    \"action_detail\": \"Inform the customer that their issue is resolved and provide any additional tips or resources.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer reported that the force restart was successful and their issue is now resolved. They thanked the support team.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Inform the customer that their issue is resolved and provide any additional tips or resources."
+    },
+    "model_output": {
+      "reasoning": "The customer reported that the force restart was successful and their issue is now resolved. They thanked the support team.",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Inform the customer that their issue is resolved and provide any additional tips or resources."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_023",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is reporting that their Xiaomi Redmi Note 13 screen is cracked and won't respond to touch. They mention having insurance but want to know how to file a claim.\",\n    \"intent_assessment\": \"lost_stolen\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search the knowledge base for relevant procedures related to filing a claim under warranty.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting that their Xiaomi Redmi Note 13 screen is cracked and won't respond to touch. They mention having insurance but want to know how to file a claim.",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for relevant procedures related to filing a claim under warranty."
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting that their Xiaomi Redmi Note 13 screen is cracked and won't respond to touch. They mention having insurance but want to know how to file a claim.",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search the knowledge base for relevant procedures related to filing a claim under warranty."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_024",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer reports that their phone is broken, which indicates an urgent issue requiring immediate attention.\",\n    \"intent_assessment\": \"damaged_screen\",\n    \"missing_information\": [],\n    \"action\": \"ESCALATE\",\n    \"action_detail\": \"Escalate to a human specialist due to the urgency of the situation.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer reports that their phone is broken, which indicates an urgent issue requiring immediate attention.",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Escalate to a human specialist due to the urgency of the situation."
+    },
+    "model_output": {
+      "reasoning": "The customer reports that their phone is broken, which indicates an urgent issue requiring immediate attention.",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Escalate to a human specialist due to the urgency of the situation."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_025",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is looking for assistance setting up their email on an iPhone 15, which falls under the 'activation' category.\",\n    \"intent_assessment\": \"activation\",\n    \"missing_information\": [],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for relevant setup instructions related to adding Google and Outlook accounts on an iPhone 15.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is looking for assistance setting up their email on an iPhone 15, which falls under the 'activation' category.",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for relevant setup instructions related to adding Google and Outlook accounts on an iPhone 15."
+    },
+    "model_output": {
+      "reasoning": "The customer is looking for assistance setting up their email on an iPhone 15, which falls under the 'activation' category.",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for relevant setup instructions related to adding Google and Outlook accounts on an iPhone 15."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "challenge_026",
+    "raw_text": "```json\n{\n    \"reasoning\": \"The customer is experiencing issues with their Samsung phone including non-working screen, inability to charge, and lack of Wi-Fi connectivity.\",\n    \"intent_assessment\": \"data_transfer\",\n    \"missing_information\": [\"screen condition\", \"battery status\", \"Wi-Fi signal strength\"],\n    \"action\": \"SEARCH_KB\",\n    \"action_detail\": \"Search for troubleshooting steps related to non-working screen, low battery, and Wi-Fi connectivity issues on Samsung devices.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their Samsung phone including non-working screen, inability to charge, and lack of Wi-Fi connectivity.",
+      "intent_assessment": "data_transfer",
+      "missing_information": [
+        "screen condition",
+        "battery status",
+        "Wi-Fi signal strength"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to non-working screen, low battery, and Wi-Fi connectivity issues on Samsung devices."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their Samsung phone including non-working screen, inability to charge, and lack of Wi-Fi connectivity.",
+      "intent_assessment": "data_transfer",
+      "missing_information": [
+        "screen condition",
+        "battery status",
+        "Wi-Fi signal strength"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to non-working screen, low battery, and Wi-Fi connectivity issues on Samsung devices."
+    },
+    "valid": true
+  }
+]

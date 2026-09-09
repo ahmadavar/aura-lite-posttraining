@@ -1,0 +1,8 @@
+reward_weights:
+  intent_accuracy: 0.22
+  action_correctness: 0.28
+  missing_info_recall: 0.17
+  clarification_quality: 0.17
+  efficiency: 0.00
+  should_not_penalty: 0.11
+  format_compliance: 0.05

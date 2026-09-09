@@ -1,0 +1,19 @@
+{
+  "method": "grpo",
+  "n_train_scenarios": 266,
+  "training_time_minutes": 1033.6,
+  "device": "mps",
+  "model": "/Users/ahmadavar/Desktop/aura-lite-posttraining/scripts/../models/qwen2.5-1.5b-instruct",
+  "seed": 42,
+  "smoke_test": false,
+  "reward_weights": {
+    "intent_accuracy": 0.2,
+    "action_correctness": 0.25,
+    "missing_info_recall": 0.15,
+    "clarification_quality": 0.15,
+    "efficiency": 0.1,
+    "should_not_penalty": 0.1,
+    "format_compliance": 0.05
+  },
+  "reward_weights_source": "default"
+}

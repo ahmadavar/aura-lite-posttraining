@@ -1,0 +1,1579 @@
+[
+  {
+    "scenario_id": "scn_0314",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0074",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0050",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0313",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0308",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0040",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0354",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"charging\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0055",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0051",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0355",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0041",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0063",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0353",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0057",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0038",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"charging\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0062",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"black_screen\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0102",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0031",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0065",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0356",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"black_screen\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0046",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0375",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0312",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"charging\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0069",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"battery_drain\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0070",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0053",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0033",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0078",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0064",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0044",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0061",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0072",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0036",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0073",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0310",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0309",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0049",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0058",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0280",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0045",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"damaged_screen\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0278",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0039",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"battery_drain\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0100",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0035",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0037",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0029",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0056",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0030",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0068",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0386",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0101",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"battery_drain\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0071",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"battery_drain\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0279",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0383",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0043",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0054",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0052",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0367",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"data_transfer\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "data_transfer",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0277",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0276",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"damaged_screen\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0077",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"battery_drain\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0076",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"charging\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0352",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"damaged_screen\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0048",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"damaged_screen\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0034",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"black_screen\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0067",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0042",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"black_screen\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "black_screen",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0275",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"battery_drain\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "battery_drain",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0351",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0311",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"charging\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0059",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0047",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0372",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"ROUTE_CLAIM\", \"action_detail\": \"Random route_claim action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": "Random route_claim action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0032",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"ASK_CLARIFICATION\", \"action_detail\": \"Random ask_clarification action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Random ask_clarification action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0098",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"damaged_screen\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0066",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"charging\", \"missing_information\": [], \"action\": \"COMPLETE\", \"action_detail\": \"Random complete action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "charging",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": "Random complete action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0307",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0379",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"damaged_screen\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "damaged_screen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0075",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"lost_stolen\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "lost_stolen",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0099",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"liquid_damage\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "liquid_damage",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0097",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"claim_routing\", \"missing_information\": [], \"action\": \"SEARCH_KB\", \"action_detail\": \"Random search_kb action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "claim_routing",
+      "missing_information": [],
+      "action": "SEARCH_KB",
+      "action_detail": "Random search_kb action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0060",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"wifi_network\", \"missing_information\": [], \"action\": \"PROVIDE_STEP\", \"action_detail\": \"Random provide_step action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "wifi_network",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Random provide_step action"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0371",
+    "raw_text": "{\"reasoning\": \"Random selection\", \"intent_assessment\": \"activation\", \"missing_information\": [], \"action\": \"ESCALATE\", \"action_detail\": \"Random escalate action\"}",
+    "parsed": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "model_output": {
+      "reasoning": "Random selection",
+      "intent_assessment": "activation",
+      "missing_information": [],
+      "action": "ESCALATE",
+      "action_detail": "Random escalate action"
+    },
+    "valid": true
+  }
+]

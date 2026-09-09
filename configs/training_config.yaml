@@ -1,0 +1,22 @@
+sft:
+  num_epochs: 2
+  batch_size: 4
+  learning_rate: 2.0e-4
+  max_seq_length: 1024
+  warmup_ratio: 0.1
+
+grpo:
+  num_epochs: 3
+  batch_size: 2
+  learning_rate: 5.0e-6
+  num_generations: 4  # K completions per prompt
+  max_prompt_length: 768
+  max_completion_length: 512
+  beta: 0.1  # KL penalty
+  seed: 42
+
+evaluation:
+  batch_size: 8
+  seed: 42
+  bootstrap_samples: 1000
+  confidence_level: 0.95

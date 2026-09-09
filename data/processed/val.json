@@ -1,0 +1,1709 @@
+[
+  {
+    "scenario_id": "scn_0366",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "There's something on my iPhone 15 screen. Lines or cracks, can't tell.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "visible_cracks",
+        "touch_response",
+        "drop_history"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "touch_sensitivity_settings",
+        "screen_replacement_claim",
+        "display_calibration",
+        "authorized_repair_locations"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "screen_damage_unclear",
+      "required_information": [
+        "visible_cracks",
+        "touch_response",
+        "drop_history",
+        "screen_appearance_details"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [
+        "visible_damage",
+        "touch_working",
+        "drop_history"
+      ],
+      "resolution_path": "damage_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0287",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "Can I get my phone replaced? Something is wrong with it.",
+      "device_type": "Samsung Galaxy S24",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "deductible_lookup",
+        "coverage_verification",
+        "claim_eligibility_check",
+        "repair_vs_replace"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0126",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "Switching to a new iPhone 16. Need to move my eSIM over. I'm on Verizon. Walk me through it.",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "sim_activation_steps",
+        "carrier_activation_portal",
+        "esim_transfer",
+        "imei_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0127",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "Got my new Samsung Galaxy Tab S9. Old phone has eSIM on T-Mobile. Need step-by-step to transfer it.",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "carrier_activation_portal",
+        "imei_check",
+        "factory_reset_activation",
+        "esim_transfer"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0216",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "damaged_screen_escalate",
+    "state": {
+      "customer_message": "My iPhone 16 screen is shattered and I can see the battery underneath. It's also getting really hot. I'm worried it might be dangerous.",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "insurance_claim_eligibility",
+        "screen_replacement_claim",
+        "authorized_repair_locations",
+        "screen_protector_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "severe_damage_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ESCALATE",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0124",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "Switching to a new iPhone 14. Need to move my eSIM over. I'm on Verizon. Walk me through it.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "factory_reset_activation",
+        "imei_check",
+        "activation_lock_removal",
+        "carrier_activation_portal"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0213",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "My iPad Air has dead pixels in the corner. No physical damage. Is this a defect?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_protector_check",
+        "authorized_repair_locations",
+        "display_calibration",
+        "screen_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0219",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "damaged_screen_escalate",
+    "state": {
+      "customer_message": "The screen on my iPhone 16 is so broken that sharp glass is exposed. I cut my finger on it. Is this a safety hazard?",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "authorized_repair_locations",
+        "touch_sensitivity_settings",
+        "screen_protector_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "severe_damage_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ESCALATE",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0208",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "My Samsung Galaxy S23 screen has green lines running across it. No drops or damage. It appeared out of nowhere.",
+      "device_type": "Samsung Galaxy S23",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "authorized_repair_locations",
+        "display_calibration",
+        "screen_replacement_claim",
+        "screen_protector_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0283",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "I think I need a new phone. Mine's messed up. Do I have insurance?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "deductible_lookup",
+        "claim_status_tracking",
+        "replacement_options",
+        "repair_vs_replace"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0209",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "Display on my Samsung Galaxy S23 is flickering. Never dropped it. Screen looks physically fine but keeps flashing.",
+      "device_type": "Samsung Galaxy S23",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "touch_sensitivity_settings",
+        "screen_replacement_claim",
+        "screen_protector_check",
+        "display_calibration"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0338",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_resolved_complete",
+    "state": {
+      "customer_message": "The charging issue on my iPhone 16 is resolved! It was lint in the port like you said. All good now.",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [
+        "issue previously reported",
+        "claim processed"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "power_adapter_check",
+        "charging_port_repair",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0212",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "My iPhone 16 has dead pixels in the corner. No physical damage. Is this a defect?",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_protector_check",
+        "display_calibration",
+        "authorized_repair_locations",
+        "insurance_claim_eligibility"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0285",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "My Samsung Galaxy A54 is broken. What are my options?",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "replacement_options",
+        "repair_vs_replace",
+        "claim_status_tracking",
+        "claim_eligibility_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0289",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "Can I get my phone replaced? Something is wrong with it.",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "claim_eligibility_check",
+        "coverage_verification",
+        "claim_status_tracking",
+        "repair_vs_replace"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0337",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_resolved_complete",
+    "state": {
+      "customer_message": "The charging issue on my Samsung Galaxy S24 is resolved! It was lint in the port like you said. All good now.",
+      "device_type": "Samsung Galaxy S24",
+      "issue_category": null,
+      "information_collected": [
+        "claim processed",
+        "customer confirmed understanding",
+        "troubleshooting steps provided"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "power_adapter_check",
+        "battery_replacement_claim",
+        "cable_troubleshoot",
+        "charging_port_cleaning"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0220",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "damaged_screen_escalate",
+    "state": {
+      "customer_message": "The screen on my iPad Air is so broken that sharp glass is exposed. I cut my finger on it. Is this a safety hazard?",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "touch_sensitivity_settings",
+        "insurance_claim_eligibility",
+        "authorized_repair_locations"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "severe_damage_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ESCALATE",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0206",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "My iPad Air screen has green lines running across it. No drops or damage. It appeared out of nowhere.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "display_calibration",
+        "screen_protector_check",
+        "touch_sensitivity_settings",
+        "insurance_claim_eligibility"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0336",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_resolved_complete",
+    "state": {
+      "customer_message": "The charging issue on my iPhone 15 is resolved! It was lint in the port like you said. All good now.",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [
+        "customer confirmed understanding"
+      ],
+      "conversation_turn": 1,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "battery_replacement_claim",
+        "cable_troubleshoot",
+        "charging_port_cleaning"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0214",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "My Motorola Edge has dead pixels in the corner. No physical damage. Is this a defect?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "screen_protector_check",
+        "authorized_repair_locations",
+        "insurance_claim_eligibility"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0125",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "Switching to a new Google Pixel 7. Need to move my eSIM over. I'm on Verizon. Walk me through it.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "factory_reset_activation",
+        "imei_check",
+        "activation_lock_removal",
+        "esim_transfer"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0121",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "I need to transfer my eSIM from my old Motorola Edge to the new one. Both phones are here. Where do I start?",
+      "device_type": "Motorola Edge",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "imei_check",
+        "carrier_activation_portal",
+        "sim_activation_steps",
+        "esim_transfer"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0335",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_resolved_complete",
+    "state": {
+      "customer_message": "Just wanted to say thanks. Cleaning the charging port on my Google Pixel 7 fixed the problem. It's charging normally now.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [
+        "replacement shipped",
+        "claim processed"
+      ],
+      "conversation_turn": 1,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "charging_port_repair",
+        "power_adapter_check",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0281",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "I think I need a new phone. Mine's messed up. Do I have insurance?",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "claim_eligibility_check",
+        "replacement_options",
+        "claim_status_tracking",
+        "repair_vs_replace"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0288",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "Can I get my phone replaced? Something is wrong with it.",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "replacement_options",
+        "deductible_lookup",
+        "coverage_verification",
+        "repair_vs_replace"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0129",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "Got my new Samsung Galaxy S23. Old phone has eSIM on T-Mobile. Need step-by-step to transfer it.",
+      "device_type": "Samsung Galaxy S23",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "carrier_activation_portal",
+        "factory_reset_activation",
+        "esim_transfer",
+        "sim_activation_steps"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0284",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "My iPhone 15 Pro is broken. What are my options?",
+      "device_type": "iPhone 15 Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "deductible_lookup",
+        "replacement_options",
+        "claim_status_tracking",
+        "claim_eligibility_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0388",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "activation_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "My iPhone 14 shows some error about activation. Not sure what to do.",
+      "device_type": "iPhone 14",
+      "issue_category": null,
+      "information_collected": [
+        "carrier_name",
+        "sim_type",
+        "error_message",
+        "new_or_replacement"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "imei_check",
+        "carrier_activation_portal",
+        "activation_lock_removal",
+        "sim_activation_steps"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "activation_unclear",
+      "required_information": [
+        "carrier_name",
+        "sim_type",
+        "error_message",
+        "new_or_replacement",
+        "activation_lock_status"
+      ],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "error_message",
+        "carrier",
+        "new_or_replacement"
+      ],
+      "resolution_path": "activation_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0211",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "Display on my iPhone 15 is flickering. Never dropped it. Screen looks physically fine but keeps flashing.",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "insurance_claim_eligibility",
+        "screen_protector_check",
+        "screen_replacement_claim",
+        "display_calibration"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0286",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "My iPhone 15 is broken. What are my options?",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "claim_eligibility_check",
+        "claim_status_tracking",
+        "deductible_lookup",
+        "coverage_verification"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0123",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "I need to transfer my eSIM from my old iPad Air to the new one. Both phones are here. Where do I start?",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "carrier_activation_portal",
+        "factory_reset_activation",
+        "activation_lock_removal",
+        "imei_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0207",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "My Samsung Galaxy A54 screen has green lines running across it. No drops or damage. It appeared out of nowhere.",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "display_calibration",
+        "screen_replacement_claim",
+        "authorized_repair_locations",
+        "touch_sensitivity_settings"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0122",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "I need to transfer my eSIM from my old Google Pixel 8 to the new one. Both phones are here. Where do I start?",
+      "device_type": "Google Pixel 8",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "esim_transfer",
+        "imei_check",
+        "factory_reset_activation",
+        "activation_lock_removal"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0215",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "damaged_screen_escalate",
+    "state": {
+      "customer_message": "My Motorola Edge screen is shattered and I can see the battery underneath. It's also getting really hot. I'm worried it might be dangerous.",
+      "device_type": "Motorola Edge",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_protector_check",
+        "display_calibration",
+        "screen_replacement_claim",
+        "touch_sensitivity_settings"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "severe_damage_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ESCALATE",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0282",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "claim_routing_ambiguous_ask",
+    "state": {
+      "customer_message": "I think I need a new phone. Mine's messed up. Do I have insurance?",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "coverage_verification",
+        "repair_vs_replace",
+        "claim_eligibility_check",
+        "deductible_lookup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "claim_routing",
+      "true_issue": "claim_eligibility_check",
+      "required_information": [
+        "damage_type",
+        "insurance_status",
+        "device_condition_details",
+        "purchase_date"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for claim_routing issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "damage_description",
+        "insurance_status",
+        "what_happened"
+      ],
+      "resolution_path": "eligibility_assessment",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0128",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "activation_clear_step",
+    "state": {
+      "customer_message": "Got my new iPhone 16. Old phone has eSIM on T-Mobile. Need step-by-step to transfer it.",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "activation_lock_removal",
+        "carrier_activation_portal",
+        "factory_reset_activation",
+        "imei_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "esim_transfer",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "esim_transfer_guide",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "ESCALATE",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0217",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "damaged_screen_escalate",
+    "state": {
+      "customer_message": "My iPad Air screen is shattered and I can see the battery underneath. It's also getting really hot. I'm worried it might be dangerous.",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "display_calibration",
+        "insurance_claim_eligibility",
+        "screen_replacement_claim",
+        "screen_protector_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "severe_damage_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ESCALATE",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0334",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_resolved_complete",
+    "state": {
+      "customer_message": "Just wanted to say thanks. Cleaning the charging port on my iPad Pro fixed the problem. It's charging normally now.",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [
+        "customer confirmed understanding"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "battery_replacement_claim",
+        "power_adapter_check",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0392",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "activation_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "My new phone doesn't work. Just got it.",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [
+        "carrier_name",
+        "sim_type",
+        "error_message",
+        "new_or_replacement"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "activation_lock_removal",
+        "factory_reset_activation",
+        "sim_activation_steps",
+        "imei_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "activation_unclear",
+      "required_information": [
+        "carrier_name",
+        "sim_type",
+        "error_message",
+        "new_or_replacement",
+        "activation_lock_status"
+      ],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "error_message",
+        "carrier",
+        "new_or_replacement"
+      ],
+      "resolution_path": "activation_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0333",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_resolved_complete",
+    "state": {
+      "customer_message": "Just wanted to say thanks. Cleaning the charging port on my Google Pixel 8 fixed the problem. It's charging normally now.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "resolution applied",
+        "issue previously reported"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "battery_replacement_claim",
+        "cable_troubleshoot",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0363",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "activation_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "My new phone doesn't work. Just got it.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [
+        "carrier_name",
+        "sim_type",
+        "error_message",
+        "new_or_replacement"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "esim_transfer",
+        "imei_check",
+        "factory_reset_activation",
+        "sim_activation_steps"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "activation",
+      "true_issue": "activation_unclear",
+      "required_information": [
+        "carrier_name",
+        "sim_type",
+        "error_message",
+        "new_or_replacement",
+        "activation_lock_status"
+      ],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for activation issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "error_message",
+        "carrier",
+        "new_or_replacement"
+      ],
+      "resolution_path": "activation_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0218",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "damaged_screen_escalate",
+    "state": {
+      "customer_message": "The screen on my Google Pixel 7 is so broken that sharp glass is exposed. I cut my finger on it. Is this a safety hazard?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "authorized_repair_locations",
+        "insurance_claim_eligibility",
+        "display_calibration",
+        "screen_protector_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "severe_damage_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "ESCALATE",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0210",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "damaged_screen_clear_search",
+    "state": {
+      "customer_message": "Display on my iPhone 16 is flickering. Never dropped it. Screen looks physically fine but keeps flashing.",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "authorized_repair_locations",
+        "display_calibration",
+        "insurance_claim_eligibility"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "damaged_screen",
+      "true_issue": "display_defect",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for damaged_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "display_calibration",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  }
+]

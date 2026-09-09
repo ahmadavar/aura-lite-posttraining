@@ -1,0 +1,125 @@
+{
+  "n_scenarios": 26,
+  "n_valid_outputs": 26,
+  "format_compliance": 1.0,
+  "composite_reward_mean": 0.5757846153846153,
+  "composite_reward_std": 0.2070421077430826,
+  "intent_accuracy": 0.46153846153846156,
+  "action_accuracy": 0.19230769230769232,
+  "action_accuracy_acceptable": 0.34615384615384615,
+  "missing_info_recall_mean": 0.0,
+  "missing_info_precision_mean": 0.0,
+  "unnecessary_question_rate": 0,
+  "avg_output_tokens": 463.7692307692308,
+  "action_distribution": {
+    "SEARCH_KB": 22,
+    "ESCALATE": 3,
+    "PROVIDE_STEP": 1
+  },
+  "action_confusion_matrix": {
+    "ASK_CLARIFICATION": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 0,
+      "ESCALATE": 1,
+      "PROVIDE_STEP": 0,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 10
+    },
+    "COMPLETE": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 0,
+      "ESCALATE": 0,
+      "PROVIDE_STEP": 1,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 0
+    },
+    "ESCALATE": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 0,
+      "ESCALATE": 1,
+      "PROVIDE_STEP": 0,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 2
+    },
+    "PROVIDE_STEP": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 0,
+      "ESCALATE": 0,
+      "PROVIDE_STEP": 0,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 3
+    },
+    "ROUTE_CLAIM": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 0,
+      "ESCALATE": 1,
+      "PROVIDE_STEP": 0,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 3
+    },
+    "SEARCH_KB": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 0,
+      "ESCALATE": 0,
+      "PROVIDE_STEP": 0,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 4
+    }
+  },
+  "per_action_metrics": {
+    "ASK_CLARIFICATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 11
+    },
+    "COMPLETE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "ESCALATE": {
+      "precision": 0.3333,
+      "recall": 0.3333,
+      "f1": 0.3333,
+      "support": 3
+    },
+    "PROVIDE_STEP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    },
+    "ROUTE_CLAIM": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+    },
+    "SEARCH_KB": {
+      "precision": 0.1818,
+      "recall": 1.0,
+      "f1": 0.3077,
+      "support": 4
+    }
+  },
+  "macro_action_f1": 0.1068,
+  "action_entropy": 0.7442,
+  "per_domain_reward": {
+    "black_screen": 0.8235,
+    "battery_drain": 0.6177,
+    "charging": 0.7206,
+    "damaged_screen": 0.437,
+    "wifi_network": 0.6691,
+    "lost_stolen": 0.5294,
+    "claim_routing": 0.2941,
+    "liquid_damage": 0.6177,
+    "data_transfer": 0.6176
+  },
+  "inference_time_sec": 397.5,
+  "condition": "rl",
+  "split": "challenge",
+  "temperature": 0.3,
+  "reward_weights": "default"
+}

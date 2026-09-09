@@ -1,0 +1,156 @@
+{
+  "gate_threshold": 0.55,
+  "gate_passed": true,
+  "n_scenarios": 83,
+  "policies": {
+    "ALWAYS_ASK": {
+      "composite_reward_mean": 0.36536144578313257,
+      "composite_reward_std": 0.11550252470127022,
+      "intent_accuracy": 0.12048192771084337,
+      "action_accuracy": 0.27710843373493976,
+      "action_accuracy_acceptable": 0.3493975903614458,
+      "macro_action_f1": 0.0723,
+      "action_entropy": 0.0,
+      "missing_info_recall_mean": 0.0,
+      "missing_info_precision_mean": 0.0,
+      "unnecessary_question_rate": 0.5662650602409639,
+      "format_compliance": 1.0,
+      "action_distribution": {
+        "ASK_CLARIFICATION": 83
+      },
+      "per_domain_reward": {
+        "charging": 0.359,
+        "battery_drain": 0.366,
+        "black_screen": 0.495,
+        "data_transfer": 0.25,
+        "liquid_damage": 0.3,
+        "lost_stolen": 0.25
+      }
+    },
+    "ALWAYS_ESCALATE": {
+      "composite_reward_mean": 0.4025289156626506,
+      "composite_reward_std": 0.1496218788605596,
+      "intent_accuracy": 0.12048192771084337,
+      "action_accuracy": 0.0963855421686747,
+      "action_accuracy_acceptable": 0.0963855421686747,
+      "macro_action_f1": 0.0293,
+      "action_entropy": 0.0,
+      "missing_info_recall_mean": 0.0,
+      "missing_info_precision_mean": 0.0,
+      "unnecessary_question_rate": 0.0,
+      "format_compliance": 1.0,
+      "action_distribution": {
+        "ESCALATE": 83
+      },
+      "per_domain_reward": {
+        "charging": 0.3758,
+        "battery_drain": 0.4118,
+        "black_screen": 0.5706,
+        "data_transfer": 0.2941,
+        "liquid_damage": 0.3529,
+        "lost_stolen": 0.2941
+      }
+    },
+    "ALWAYS_COMPLETE": {
+      "composite_reward_mean": 0.3345072289156627,
+      "composite_reward_std": 0.17631620881221172,
+      "intent_accuracy": 0.12048192771084337,
+      "action_accuracy": 0.07228915662650602,
+      "action_accuracy_acceptable": 0.07228915662650602,
+      "macro_action_f1": 0.0225,
+      "action_entropy": 0.0,
+      "missing_info_recall_mean": 0.0,
+      "missing_info_precision_mean": 0.0,
+      "unnecessary_question_rate": 0.0,
+      "format_compliance": 1.0,
+      "action_distribution": {
+        "COMPLETE": 83
+      },
+      "per_domain_reward": {
+        "charging": 0.2843,
+        "battery_drain": 0.3459,
+        "black_screen": 0.5706,
+        "data_transfer": 0.1765,
+        "liquid_damage": 0.3529,
+        "lost_stolen": 0.1765
+      }
+    },
+    "MOST_FREQUENT": {
+      "composite_reward_mean": 0.4361445783132529,
+      "composite_reward_std": 0.1610981241453029,
+      "intent_accuracy": 0.43373493975903615,
+      "action_accuracy": 0.27710843373493976,
+      "action_accuracy_acceptable": 0.3493975903614458,
+      "macro_action_f1": 0.0723,
+      "action_entropy": 0.0,
+      "missing_info_recall_mean": 0.125,
+      "missing_info_precision_mean": 0.10843373493975904,
+      "unnecessary_question_rate": 0.5662650602409639,
+      "format_compliance": 1.0,
+      "action_distribution": {
+        "ASK_CLARIFICATION": 83
+      },
+      "per_domain_reward": {
+        "charging": 0.559,
+        "battery_drain": 0.393,
+        "black_screen": 0.295,
+        "data_transfer": 0.25,
+        "liquid_damage": 0.3,
+        "lost_stolen": 0.25
+      }
+    },
+    "RANDOM": {
+      "composite_reward_mean": 0.4112939759036144,
+      "composite_reward_std": 0.16959404495498123,
+      "intent_accuracy": 0.12048192771084337,
+      "action_accuracy": 0.1566265060240964,
+      "action_accuracy_acceptable": 0.2289156626506024,
+      "macro_action_f1": 0.1398,
+      "action_entropy": 2.5613,
+      "missing_info_recall_mean": 0.0,
+      "missing_info_precision_mean": 0.0,
+      "unnecessary_question_rate": 0.6153846153846154,
+      "format_compliance": 1.0,
+      "action_distribution": {
+        "SEARCH_KB": 16,
+        "ASK_CLARIFICATION": 13,
+        "COMPLETE": 16,
+        "PROVIDE_STEP": 14,
+        "ROUTE_CLAIM": 15,
+        "ESCALATE": 9
+      },
+      "per_domain_reward": {
+        "charging": 0.4555,
+        "battery_drain": 0.3373,
+        "black_screen": 0.4338,
+        "data_transfer": 0.2353,
+        "liquid_damage": 0.5441,
+        "lost_stolen": 0.3088
+      }
+    },
+    "KEYWORD_STUFFER": {
+      "composite_reward_mean": 0.5189759036144578,
+      "composite_reward_std": 0.21463440341708406,
+      "intent_accuracy": 0.43373493975903615,
+      "action_accuracy": 0.27710843373493976,
+      "action_accuracy_acceptable": 0.3493975903614458,
+      "macro_action_f1": 0.0723,
+      "action_entropy": 0.0,
+      "missing_info_recall_mean": 0.75,
+      "missing_info_precision_mean": 0.09397590361445783,
+      "unnecessary_question_rate": 0.5662650602409639,
+      "format_compliance": 1.0,
+      "action_distribution": {
+        "ASK_CLARIFICATION": 83
+      },
+      "per_domain_reward": {
+        "charging": 0.6649,
+        "battery_drain": 0.4812,
+        "black_screen": 0.307,
+        "data_transfer": 0.37,
+        "liquid_damage": 0.3,
+        "lost_stolen": 0.375
+      }
+    }
+  }
+}

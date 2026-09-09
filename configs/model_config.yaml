@@ -1,0 +1,17 @@
+model:
+  name: "Qwen/Qwen2.5-1.5B-Instruct"
+  fallback: "Qwen/Qwen2.5-0.5B-Instruct"
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.9
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+  task_type: "CAUSAL_LM"
+
+generation:
+  num_return_sequences: 4  # K for GRPO
+  do_sample: true

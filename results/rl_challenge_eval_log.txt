@@ -1,0 +1,90 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.11/site-packages/transformers/pytorch_utils.py:339: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  test_elements = torch.tensor(test_elements)
+
+============================================================
+Evaluating: RL-trained model + engineered prompt
+Split: challenge
+Temperature: 0.3
+============================================================
+
+Loaded 26 scenarios from challenge split
+Using default reward weights
+Device: mps
+Loading base model from /Users/ahmadavar/Desktop/aura-lite-posttraining/models/qwen2.5-1.5b-instruct ...
+Loading LoRA adapter from /Users/ahmadavar/Desktop/aura-lite-posttraining/models/trained_rl ...
+Adapter merged and unloaded.
+Model ready.
+
+Running inference (rl)...
+  [rl] 1/26: challenge_001  [rl] 2/26: challenge_002  [rl] 3/26: challenge_003  [rl] 4/26: challenge_004  [rl] 5/26: challenge_005  [rl] 6/26: challenge_006  [rl] 7/26: challenge_007  [rl] 8/26: challenge_008  [rl] 9/26: challenge_009  [rl] 10/26: challenge_010  [rl] 11/26: challenge_011  [rl] 12/26: challenge_012  [rl] 13/26: challenge_013  [rl] 14/26: challenge_014  [rl] 15/26: challenge_015  [rl] 16/26: challenge_016  [rl] 17/26: challenge_017  [rl] 18/26: challenge_018  [rl] 19/26: challenge_019  [rl] 20/26: challenge_020  [rl] 21/26: challenge_021  [rl] 22/26: challenge_022  [rl] 23/26: challenge_023  [rl] 24/26: challenge_024  [rl] 25/26: challenge_025  [rl] 26/26: challenge_026
+Inference completed in 397.5s
+
+Computing metrics...
+
+Confusion Matrix:
+                                     Predicted                    
+                       ASK    COMP   ESCAL    STEP   CLAIM  SEARCH
+ASK                      0       0       1       0       0      10
+COMP                     0       0       0       1       0       0
+ESCAL                    0       0       1       0       0       2
+STEP                     0       0       0       0       0       3
+CLAIM                    0       0       1       0       0       3
+SEARCH                   0       0       0       0       0       4
+
+============================================================
+EVALUATION SUMMARY: RL on CHALLENGE
+============================================================
+  Scenarios evaluated                 26
+  Valid outputs                       26
+  Format compliance                   1.0000
+  Composite reward (mean)             0.5758
+  Composite reward (std)              0.2070
+  Intent accuracy                     0.4615
+  Action accuracy (exact)             0.1923
+  Action accuracy (acceptable)        0.3462
+  Macro action F1                     0.1068
+  Action entropy                      0.7442
+  Missing info recall                 0.0000
+  Missing info precision              0.0000
+  Unnecessary question rate           0.0000
+
+Per-domain reward:
+    black_screen                   0.8235
+    charging                       0.7206
+    wifi_network                   0.6691
+    battery_drain                  0.6177
+    liquid_damage                  0.6177
+    data_transfer                  0.6176
+    lost_stolen                    0.5294
+    damaged_screen                 0.4370
+    claim_routing                  0.2941
+
+Per-action P/R/F1:
+  Action                        Prec   Recall       F1  Support
+  ---------------------------------------------------------
+  ASK_CLARIFICATION           0.0000   0.0000   0.0000       11
+  COMPLETE                    0.0000   0.0000   0.0000        1
+  ESCALATE                    0.3333   0.3333   0.3333        3
+  PROVIDE_STEP                0.0000   0.0000   0.0000        3
+  ROUTE_CLAIM                 0.0000   0.0000   0.0000        4
+  SEARCH_KB                   0.1818   1.0000   0.3077        4
+
+============================================================
+PARITY TABLE (evaluation settings)
+============================================================
+  Condition                 rl
+  Split                     challenge
+  Base model                /Users/ahmadavar/Desktop/aura-lite-posttraining/models/qwen2.5-1.5b-instruct
+  Adapter path              /Users/ahmadavar/Desktop/aura-lite-posttraining/models/trained_rl
+  System prompt             ENGINEERED
+  Temperature               0.3
+  max_new_tokens            512
+  top_p                     0.9
+  Reward weights            default
+  Random seed               42
+  Timestamp                 2026-09-09T10:43:49
+============================================================
+
+Metrics saved to /Users/ahmadavar/Desktop/aura-lite-posttraining/results/rl_challenge_results.json
+Predictions saved to /Users/ahmadavar/Desktop/aura-lite-posttraining/results/rl_challenge_predictions.json

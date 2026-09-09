@@ -1,0 +1,3354 @@
+[
+  {
+    "scenario_id": "scn_0314",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "charging_repeated_escalate",
+    "state": {
+      "customer_message": "This is my 4th time contacting support about my Samsung Galaxy Tab S9 not charging. I've followed every troubleshooting step. Please escalate this.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "power_adapter_check",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "repeated_contact_unresolved",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "supervisor_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0074",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "My iPad Pro keeps turning off. Battery related maybe.",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "location_services_audit",
+        "background_app_refresh",
+        "software_update_check",
+        "battery_health_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0050",
+    "ambiguity_level": "misleading",
+    "difficulty": "hard",
+    "template_family": "charging_misleading_ask",
+    "state": {
+      "customer_message": "Dropped my iPhone 15 Pro in water and charging stopped. I put it in rice.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "battery_replacement_claim",
+        "charging_port_cleaning",
+        "wireless_charging_setup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "liquid_damage_charging",
+      "required_information": [
+        "water_exposure_duration",
+        "drying_method",
+        "visible_damage"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [
+        "water_exposure",
+        "current_state",
+        "insurance_coverage"
+      ],
+      "resolution_path": "liquid_damage_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0313",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "charging_repeated_escalate",
+    "state": {
+      "customer_message": "This is my 4th time contacting support about my Google Pixel 7 not charging. I've followed every troubleshooting step. Please escalate this.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "cable_troubleshoot",
+        "battery_replacement_claim",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "repeated_contact_unresolved",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "supervisor_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0308",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "battery_safety_escalate",
+    "state": {
+      "customer_message": "My Google Pixel 7 battery is swelling. The back of the phone is bulging out. I'm scared it might explode.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "background_app_refresh",
+        "low_power_mode",
+        "location_services_audit",
+        "software_update_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_swelling_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation_battery",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0040",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "Something is wrong with my Samsung Galaxy Tab S9 battery I think. It's not charging well.",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "cable_troubleshoot",
+        "power_adapter_check",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0354",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "battery_resolved_complete",
+    "state": {
+      "customer_message": "Wanted to let you know turning off location services for some apps fixed the battery drain on my iPad Pro. Thanks!",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [
+        "claim processed",
+        "issue previously reported"
+      ],
+      "conversation_turn": 1,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "location_services_audit",
+        "background_app_refresh",
+        "software_update_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0055",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "Plugged in my iPad Air but battery isn't going up. Tested the cable on another phone and it works. Port looks fine.",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "power_adapter_check",
+        "wireless_charging_setup",
+        "cable_troubleshoot",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0051",
+    "ambiguity_level": "misleading",
+    "difficulty": "hard",
+    "template_family": "charging_misleading_ask",
+    "state": {
+      "customer_message": "Dropped my iPhone 14 in water and charging stopped. I put it in rice.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "power_adapter_check",
+        "charging_port_cleaning",
+        "charging_port_repair",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "liquid_damage_charging",
+      "required_information": [
+        "water_exposure_duration",
+        "drying_method",
+        "visible_damage"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [
+        "water_exposure",
+        "current_state",
+        "insurance_coverage"
+      ],
+      "resolution_path": "liquid_damage_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0355",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "battery_resolved_complete",
+    "state": {
+      "customer_message": "Wanted to let you know turning off location services for some apps fixed the battery drain on my Google Pixel 7. Thanks!",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [
+        "customer confirmed understanding",
+        "replacement shipped",
+        "claim processed"
+      ],
+      "conversation_turn": 1,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "location_services_audit",
+        "software_update_check",
+        "battery_health_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0041",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "Something is wrong with my Samsung Galaxy S24 battery I think. It's not charging well.",
+      "device_type": "Samsung Galaxy S24",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "battery_replacement_claim",
+        "charging_port_repair",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0063",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "My iPhone 14 stopped charging. Port looks like it has lint in it. What should I do?",
+      "device_type": "iPhone 14",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_repair",
+        "battery_replacement_claim",
+        "charging_port_cleaning",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0353",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "battery_resolved_complete",
+    "state": {
+      "customer_message": "Update on my iPad Pro battery issue: I disabled background app refresh and it's lasting all day now. Problem solved!",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [
+        "issue previously reported",
+        "replacement shipped"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "location_services_audit",
+        "software_update_check",
+        "background_app_refresh"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0057",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "Plugged in my Samsung Galaxy Tab S9 but battery isn't going up. Tested the cable on another phone and it works. Port looks fine.",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "power_adapter_check",
+        "wireless_charging_setup",
+        "charging_port_cleaning",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0038",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "My phone charges really slow. Takes forever.",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "charging_port_repair",
+        "charging_port_cleaning",
+        "wireless_charging_setup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0062",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "My Samsung Galaxy S23 stopped charging. Port looks like it has lint in it. What should I do?",
+      "device_type": "Samsung Galaxy S23",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "charging_port_repair",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0102",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "battery_clear_claim",
+    "state": {
+      "customer_message": "Motorola Edge battery is shot. Health says 58%. Can barely make it through a phone call. I'd like to file a claim.",
+      "device_type": "Motorola Edge",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "background_app_refresh",
+        "software_update_check",
+        "battery_health_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_end_of_life",
+      "required_information": [
+        "insurance_verification"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "insurance_status",
+        "purchase_date"
+      ],
+      "resolution_path": "battery_replacement_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0031",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "My iPhone 15 Pro screen is black but it vibrates when I get calls. No damage, no water. I already tried pressing the power button. What do I do next?",
+      "device_type": "iPhone 15 Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "dfu_mode_recovery",
+        "force_restart_android",
+        "screen_replacement_claim",
+        "battery_calibration"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0065",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "I can see debris in the charging port of my Samsung Galaxy Tab S9. Phone won't charge. How do I clean it safely?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "charging_port_repair",
+        "charging_port_cleaning",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0356",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "battery_resolved_complete",
+    "state": {
+      "customer_message": "Wanted to let you know turning off location services for some apps fixed the battery drain on my Samsung Galaxy A54. Thanks!",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "replacement shipped",
+        "troubleshooting steps provided",
+        "claim processed"
+      ],
+      "conversation_turn": 1,
+      "available_kb_topics": [
+        "low_power_mode",
+        "software_update_check",
+        "background_app_refresh",
+        "battery_health_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0046",
+    "ambiguity_level": "misleading",
+    "difficulty": "hard",
+    "template_family": "charging_misleading_ask",
+    "state": {
+      "customer_message": "My Samsung Galaxy A54 got wet and now it won't charge. The screen also flickers.",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "cable_troubleshoot",
+        "power_adapter_check",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "liquid_damage_charging",
+      "required_information": [
+        "water_exposure_duration",
+        "drying_method",
+        "visible_damage"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [
+        "water_exposure",
+        "current_state",
+        "insurance_coverage"
+      ],
+      "resolution_path": "liquid_damage_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0375",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "data_transfer_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "Transfer didn't work completely. Lost some contacts.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "transfer_method_used",
+        "what_is_missing",
+        "old_device_available"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "move_to_ios",
+        "smart_switch_samsung",
+        "manual_transfer_usb",
+        "icloud_backup_restore"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "data_transfer",
+      "true_issue": "incomplete_transfer",
+      "required_information": [
+        "transfer_method_used",
+        "what_is_missing",
+        "old_device_available",
+        "backup_status"
+      ],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for data_transfer issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "transfer_method",
+        "missing_data",
+        "backup_availability"
+      ],
+      "resolution_path": "retry_transfer",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0312",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "charging_repeated_escalate",
+    "state": {
+      "customer_message": "I've called about my Samsung Galaxy Tab S9 charging issue 3 times now. I've tried everything your agents suggested: new cable, port cleaning, factory reset. Nothing works. I need to talk to a supervisor.",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "charging_port_repair",
+        "battery_replacement_claim",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "repeated_contact_unresolved",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "supervisor_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0069",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "Charging port on my iPhone 15 Pro seems clogged. Tried blowing into it. Still won't charge.",
+      "device_type": "iPhone 15 Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "charging_port_repair",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0070",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "Phone dies fast. Might be the battery?",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "background_app_refresh",
+        "software_update_check",
+        "battery_replacement_claim",
+        "low_power_mode"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0053",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "My iPad Air won't charge at all. I've tried two different cables and three outlets. Port looks clean.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "battery_replacement_claim",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0033",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "Screen went black on my Motorola Edge. No cracks, no drops. Power button doesn't help. I need the force restart steps.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "force_restart_iphone",
+        "force_restart_android",
+        "dfu_mode_recovery"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0078",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "Something wrong with my phone. Runs out of juice too quick.",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "software_update_check",
+        "location_services_audit",
+        "low_power_mode",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0064",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "I can see debris in the charging port of my iPhone 15. Phone won't charge. How do I clean it safely?",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "power_adapter_check",
+        "cable_troubleshoot",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0044",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "Phone battery situation. Charging is off somehow.",
+      "device_type": "iPhone 15 Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "battery_replacement_claim",
+        "charging_port_cleaning",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0061",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "My Google Pixel 8 stopped charging. Port looks like it has lint in it. What should I do?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "wireless_charging_setup",
+        "charging_port_cleaning",
+        "charging_port_repair"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0072",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "Phone dies fast. Might be the battery?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "location_services_audit",
+        "software_update_check",
+        "battery_health_check",
+        "background_app_refresh"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0036",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "My Samsung Galaxy S24 froze and went to a black screen. It's not physically damaged. I've tried holding the power button for 10 seconds but nothing happened.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_calibration",
+        "dfu_mode_recovery",
+        "water_damage_check",
+        "force_restart_iphone"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0073",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "My Samsung Galaxy S24 keeps turning off. Battery related maybe.",
+      "device_type": "Samsung Galaxy S24",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "low_power_mode",
+        "location_services_audit",
+        "battery_health_check",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0310",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "battery_safety_escalate",
+    "state": {
+      "customer_message": "The Motorola Edge is extremely hot to the touch and smells like burning. Battery area is swollen. What do I do?",
+      "device_type": "Motorola Edge",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "background_app_refresh",
+        "battery_replacement_claim",
+        "location_services_audit",
+        "software_update_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_swelling_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation_battery",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0309",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "battery_safety_escalate",
+    "state": {
+      "customer_message": "The iPhone 15 is extremely hot to the touch and smells like burning. Battery area is swollen. What do I do?",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "location_services_audit",
+        "software_update_check",
+        "battery_replacement_claim",
+        "low_power_mode"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_swelling_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation_battery",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0049",
+    "ambiguity_level": "misleading",
+    "difficulty": "hard",
+    "template_family": "charging_misleading_ask",
+    "state": {
+      "customer_message": "Dropped my Google Pixel 7 in water and charging stopped. I put it in rice.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "cable_troubleshoot",
+        "charging_port_repair",
+        "wireless_charging_setup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "liquid_damage_charging",
+      "required_information": [
+        "water_exposure_duration",
+        "drying_method",
+        "visible_damage"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [
+        "water_exposure",
+        "current_state",
+        "insurance_coverage"
+      ],
+      "resolution_path": "liquid_damage_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0058",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "Google Pixel 7 won't take a charge. Tried OEM cable and a third-party one. Both work on my other phone.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "charging_port_cleaning",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0280",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "liquid_clear_search",
+    "state": {
+      "customer_message": "My Google Pixel 8 got soaked in the rain yesterday. It works but the camera has fog inside. What can I do?",
+      "device_type": "Google Pixel 8",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "drying_procedure",
+        "authorized_repair_assessment",
+        "water_damage_indicator",
+        "liquid_damage_first_aid"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "liquid_damage",
+      "true_issue": "partial_liquid_damage",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for liquid_damage issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "drying_procedure",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0045",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "Phone battery situation. Charging is off somehow.",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "wireless_charging_setup",
+        "charging_port_repair",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0278",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "liquid_clear_search",
+    "state": {
+      "customer_message": "My Samsung Galaxy S23 got soaked in the rain yesterday. It works but the camera has fog inside. What can I do?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "rice_myth_debunk",
+        "insurance_claim_liquid",
+        "water_damage_indicator",
+        "liquid_damage_first_aid"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "liquid_damage",
+      "true_issue": "partial_liquid_damage",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for liquid_damage issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "drying_procedure",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0039",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "My phone charges really slow. Takes forever.",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_repair",
+        "charging_port_cleaning",
+        "power_adapter_check",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0100",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "battery_clear_claim",
+    "state": {
+      "customer_message": "Google Pixel 7 battery is shot. Health says 58%. Can barely make it through a phone call. I'd like to file a claim.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "background_app_refresh",
+        "battery_replacement_claim",
+        "software_update_check",
+        "low_power_mode"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_end_of_life",
+      "required_information": [
+        "insurance_verification"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "insurance_status",
+        "purchase_date"
+      ],
+      "resolution_path": "battery_replacement_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0035",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "My iPhone 14 froze and went to a black screen. It's not physically damaged. I've tried holding the power button for 10 seconds but nothing happened.",
+      "device_type": "iPhone 14",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "water_damage_check",
+        "force_restart_android",
+        "dfu_mode_recovery"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0037",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "My iPhone 15 froze and went to a black screen. It's not physically damaged. I've tried holding the power button for 10 seconds but nothing happened.",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "water_damage_check",
+        "force_restart_android",
+        "force_restart_iphone",
+        "dfu_mode_recovery"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0029",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "My Motorola Edge screen is black but it vibrates when I get calls. No damage, no water. I already tried pressing the power button. What do I do next?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "water_damage_check",
+        "battery_calibration",
+        "force_restart_android",
+        "dfu_mode_recovery"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0056",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "Plugged in my iPhone 15 but battery isn't going up. Tested the cable on another phone and it works. Port looks fine.",
+      "device_type": "iPhone 15",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "power_adapter_check",
+        "charging_port_cleaning"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0030",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "My Google Pixel 7 screen is black but it vibrates when I get calls. No damage, no water. I already tried pressing the power button. What do I do next?",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_calibration",
+        "water_damage_check",
+        "force_restart_android",
+        "screen_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0068",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "Charging port on my iPad Air seems clogged. Tried blowing into it. Still won't charge.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_repair",
+        "wireless_charging_setup",
+        "battery_replacement_claim",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0386",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "black_screen_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "My phone isn't working. Screen is dark I think.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "physical_damage_check",
+        "recent_events",
+        "screen_completely_black_or_dim"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "screen_replacement_claim",
+        "force_restart_android",
+        "battery_calibration",
+        "force_restart_iphone"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [
+        "physical_damage_check",
+        "recent_events",
+        "screen_completely_black_or_dim",
+        "device_model_confirm"
+      ],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "physical_damage",
+        "screen_state",
+        "recent_events"
+      ],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0101",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "battery_clear_claim",
+    "state": {
+      "customer_message": "Samsung Galaxy Tab S9 battery is shot. Health says 58%. Can barely make it through a phone call. I'd like to file a claim.",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_health_check",
+        "battery_replacement_claim",
+        "location_services_audit",
+        "low_power_mode"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_end_of_life",
+      "required_information": [
+        "insurance_verification"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "insurance_status",
+        "purchase_date"
+      ],
+      "resolution_path": "battery_replacement_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0071",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "Phone dies fast. Might be the battery?",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "background_app_refresh",
+        "software_update_check",
+        "battery_health_check",
+        "location_services_audit"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0279",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "liquid_clear_search",
+    "state": {
+      "customer_message": "My Samsung Galaxy Tab S9 got soaked in the rain yesterday. It works but the camera has fog inside. What can I do?",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "drying_procedure",
+        "water_damage_indicator",
+        "authorized_repair_assessment",
+        "rice_myth_debunk"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "liquid_damage",
+      "true_issue": "partial_liquid_damage",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for liquid_damage issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "drying_procedure",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0383",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "data_transfer_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "My stuff didn't transfer over. Photos are missing from my new phone.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "transfer_method_used",
+        "what_is_missing",
+        "old_device_available"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "move_to_ios",
+        "icloud_backup_restore",
+        "google_backup_transfer",
+        "manual_transfer_usb"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "data_transfer",
+      "true_issue": "incomplete_transfer",
+      "required_information": [
+        "transfer_method_used",
+        "what_is_missing",
+        "old_device_available",
+        "backup_status"
+      ],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for data_transfer issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "transfer_method",
+        "missing_data",
+        "backup_availability"
+      ],
+      "resolution_path": "retry_transfer",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0043",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "Charging issues with my iPhone 16. It's weird.",
+      "device_type": "iPhone 16",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "power_adapter_check",
+        "charging_port_cleaning",
+        "charging_port_repair",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0054",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "My Samsung Galaxy Tab S9 won't charge at all. I've tried two different cables and three outlets. Port looks clean.",
+      "device_type": "Samsung Galaxy Tab S9",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "charging_port_repair",
+        "battery_replacement_claim",
+        "wireless_charging_setup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0052",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "My iPad Pro won't charge at all. I've tried two different cables and three outlets. Port looks clean.",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "cable_troubleshoot",
+        "charging_port_repair",
+        "charging_port_cleaning"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0367",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "lost_stolen_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "Haven't seen my Samsung Galaxy A54 since yesterday. Not sure if I lost it or someone took it.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "police_report_filing",
+        "insurance_claim_lost",
+        "find_my_device",
+        "remote_lock_wipe"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "lost_stolen",
+      "true_issue": "missing_device_unclear",
+      "required_information": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted",
+        "time_since_missing"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for lost_stolen issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [
+        "last_location",
+        "lost_or_stolen",
+        "find_my_status"
+      ],
+      "resolution_path": "locate_then_decide",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0277",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "liquid_clear_search",
+    "state": {
+      "customer_message": "I dropped my iPhone 15 Pro in water briefly. It works now but the speaker sounds muffled. No insurance. What are my options?",
+      "device_type": "iPhone 15 Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "authorized_repair_assessment",
+        "rice_myth_debunk",
+        "water_damage_indicator",
+        "insurance_claim_liquid"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "liquid_damage",
+      "true_issue": "partial_liquid_damage",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for liquid_damage issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "drying_procedure",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0276",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "liquid_clear_search",
+    "state": {
+      "customer_message": "I dropped my iPad Air in water briefly. It works now but the speaker sounds muffled. No insurance. What are my options?",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "rice_myth_debunk",
+        "water_damage_indicator",
+        "liquid_damage_first_aid",
+        "authorized_repair_assessment"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "liquid_damage",
+      "true_issue": "partial_liquid_damage",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for liquid_damage issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "drying_procedure",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0077",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "Something wrong with my phone. Runs out of juice too quick.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_health_check",
+        "low_power_mode",
+        "background_app_refresh",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0076",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "Something wrong with my phone. Runs out of juice too quick.",
+      "device_type": "iPad Air",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "low_power_mode",
+        "background_app_refresh",
+        "location_services_audit",
+        "battery_health_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0352",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "battery_resolved_complete",
+    "state": {
+      "customer_message": "Update on my Samsung Galaxy S24 battery issue: I disabled background app refresh and it's lasting all day now. Problem solved!",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "claim processed",
+        "troubleshooting steps provided"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "background_app_refresh",
+        "location_services_audit",
+        "low_power_mode",
+        "battery_health_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0048",
+    "ambiguity_level": "misleading",
+    "difficulty": "hard",
+    "template_family": "charging_misleading_ask",
+    "state": {
+      "customer_message": "My Google Pixel 7 got wet and now it won't charge. The screen also flickers.",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "power_adapter_check",
+        "battery_replacement_claim",
+        "wireless_charging_setup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "liquid_damage_charging",
+      "required_information": [
+        "water_exposure_duration",
+        "drying_method",
+        "visible_damage"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [
+        "water_exposure",
+        "current_state",
+        "insurance_coverage"
+      ],
+      "resolution_path": "liquid_damage_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0034",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "Screen went black on my Samsung Galaxy S24. No cracks, no drops. Power button doesn't help. I need the force restart steps.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "force_restart_iphone",
+        "dfu_mode_recovery",
+        "force_restart_android",
+        "battery_calibration"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0067",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "Charging port on my Samsung Galaxy A54 seems clogged. Tried blowing into it. Still won't charge.",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "charging_port_repair",
+        "power_adapter_check",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0042",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "charging_ambiguous_ask",
+    "state": {
+      "customer_message": "Charging issues with my Google Pixel 8. It's weird.",
+      "device_type": "Google Pixel 8",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "battery_replacement_claim",
+        "charging_port_repair",
+        "power_adapter_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "slow_charging",
+      "required_information": [
+        "cable_type",
+        "charger_wattage",
+        "charging_speed_details"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "cable_type",
+        "charger_type",
+        "charging_behavior"
+      ],
+      "resolution_path": "charger_upgrade_or_port_clean",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0275",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "liquid_clear_search",
+    "state": {
+      "customer_message": "I dropped my Samsung Galaxy S24 in water briefly. It works now but the speaker sounds muffled. No insurance. What are my options?",
+      "device_type": "Samsung Galaxy S24",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "rice_myth_debunk",
+        "authorized_repair_assessment",
+        "drying_procedure",
+        "insurance_claim_liquid"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "liquid_damage",
+      "true_issue": "partial_liquid_damage",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for liquid_damage issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "drying_procedure",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0351",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "battery_resolved_complete",
+    "state": {
+      "customer_message": "Update on my Google Pixel 7 battery issue: I disabled background app refresh and it's lasting all day now. Problem solved!",
+      "device_type": "Google Pixel 7",
+      "issue_category": null,
+      "information_collected": [
+        "customer confirmed understanding",
+        "claim processed",
+        "resolution applied"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "location_services_audit",
+        "background_app_refresh",
+        "software_update_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "issue_resolved",
+      "required_information": [],
+      "ideal_action": "COMPLETE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "COMPLETE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "close_ticket",
+      "should_not_do": [
+        "ASK_CLARIFICATION",
+        "SEARCH_KB",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0311",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "charging_repeated_escalate",
+    "state": {
+      "customer_message": "I've called about my iPhone 14 charging issue 3 times now. I've tried everything your agents suggested: new cable, port cleaning, factory reset. Nothing works. I need to talk to a supervisor.",
+      "device_type": "iPhone 14",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "power_adapter_check",
+        "battery_replacement_claim",
+        "cable_troubleshoot"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "repeated_contact_unresolved",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "supervisor_escalation",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0059",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "Samsung Galaxy S23 won't take a charge. Tried OEM cable and a third-party one. Both work on my other phone.",
+      "device_type": "Samsung Galaxy S23",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "wireless_charging_setup",
+        "power_adapter_check",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0047",
+    "ambiguity_level": "misleading",
+    "difficulty": "hard",
+    "template_family": "charging_misleading_ask",
+    "state": {
+      "customer_message": "My Samsung Galaxy Tab S9 got wet and now it won't charge. The screen also flickers.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "charging_port_cleaning",
+        "power_adapter_check",
+        "charging_port_repair",
+        "wireless_charging_setup"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "liquid_damage_charging",
+      "required_information": [
+        "water_exposure_duration",
+        "drying_method",
+        "visible_damage"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION",
+        "ROUTE_CLAIM"
+      ],
+      "acceptable_clarification_topics": [
+        "water_exposure",
+        "current_state",
+        "insurance_coverage"
+      ],
+      "resolution_path": "liquid_damage_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0372",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "lost_stolen_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "My Google Pixel 8 is missing. Not sure what happened to it.",
+      "device_type": "Google Pixel 8",
+      "issue_category": null,
+      "information_collected": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "insurance_claim_lost",
+        "replacement_device_claim",
+        "imei_blacklist",
+        "police_report_filing"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "lost_stolen",
+      "true_issue": "missing_device_unclear",
+      "required_information": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted",
+        "time_since_missing"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for lost_stolen issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [
+        "last_location",
+        "lost_or_stolen",
+        "find_my_status"
+      ],
+      "resolution_path": "locate_then_decide",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0032",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "black_screen_clear_step",
+    "state": {
+      "customer_message": "Screen went black on my iPad Pro. No cracks, no drops. Power button doesn't help. I need the force restart steps.",
+      "device_type": "iPad Pro",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_calibration",
+        "water_damage_check",
+        "force_restart_iphone",
+        "dfu_mode_recovery"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "black_screen",
+      "true_issue": "software_crash",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for black_screen issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "force_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0098",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "battery_clear_claim",
+    "state": {
+      "customer_message": "My Motorola Edge battery health is at 62%. It dies in under 2 hours. I have insurance. Need a replacement battery or phone.",
+      "device_type": "Motorola Edge",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "low_power_mode",
+        "battery_health_check",
+        "battery_replacement_claim",
+        "background_app_refresh"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_end_of_life",
+      "required_information": [
+        "insurance_verification"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "insurance_status",
+        "purchase_date"
+      ],
+      "resolution_path": "battery_replacement_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0066",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_step",
+    "state": {
+      "customer_message": "I can see debris in the charging port of my iPhone 15 Pro. Phone won't charge. How do I clean it safely?",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "cable_troubleshoot",
+        "charging_port_cleaning",
+        "wireless_charging_setup",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_debris",
+      "required_information": [],
+      "ideal_action": "PROVIDE_STEP",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "PROVIDE_STEP",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "port_cleaning",
+      "should_not_do": [
+        "ROUTE_CLAIM",
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0307",
+    "ambiguity_level": "clear",
+    "difficulty": "hard",
+    "template_family": "battery_safety_escalate",
+    "state": {
+      "customer_message": "My Motorola Edge battery is swelling. The back of the phone is bulging out. I'm scared it might explode.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_health_check",
+        "battery_replacement_claim",
+        "software_update_check",
+        "background_app_refresh"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_swelling_safety",
+      "required_information": [],
+      "ideal_action": "ESCALATE",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ESCALATE"
+      ],
+      "acceptable_clarification_topics": [],
+      "resolution_path": "safety_escalation_battery",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE",
+        "SEARCH_KB"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0379",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "lost_stolen_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "Haven't seen my Motorola Edge since yesterday. Not sure if I lost it or someone took it.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "imei_blacklist",
+        "replacement_device_claim",
+        "police_report_filing",
+        "insurance_claim_lost"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "lost_stolen",
+      "true_issue": "missing_device_unclear",
+      "required_information": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted",
+        "time_since_missing"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for lost_stolen issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [
+        "last_location",
+        "lost_or_stolen",
+        "find_my_status"
+      ],
+      "resolution_path": "locate_then_decide",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0075",
+    "ambiguity_level": "ambiguous",
+    "difficulty": "medium",
+    "template_family": "battery_ambiguous_ask",
+    "state": {
+      "customer_message": "My Google Pixel 7 keeps turning off. Battery related maybe.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "location_services_audit",
+        "low_power_mode",
+        "background_app_refresh"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "excessive_drain",
+      "required_information": [
+        "battery_health_percent",
+        "usage_pattern",
+        "shutdown_behavior",
+        "device_age"
+      ],
+      "ideal_action": "ASK_CLARIFICATION",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "battery_health",
+        "usage_pattern",
+        "shutdown_details"
+      ],
+      "resolution_path": "battery_diagnostics",
+      "should_not_do": [
+        "COMPLETE",
+        "ROUTE_CLAIM"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0099",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "battery_clear_claim",
+    "state": {
+      "customer_message": "My Samsung Galaxy S24 battery health is at 62%. It dies in under 2 hours. I have insurance. Need a replacement battery or phone.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "location_services_audit",
+        "software_update_check",
+        "battery_replacement_claim",
+        "background_app_refresh"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_end_of_life",
+      "required_information": [
+        "insurance_verification"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "insurance_status",
+        "purchase_date"
+      ],
+      "resolution_path": "battery_replacement_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0097",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "battery_clear_claim",
+    "state": {
+      "customer_message": "My Samsung Galaxy A54 battery health is at 62%. It dies in under 2 hours. I have insurance. Need a replacement battery or phone.",
+      "device_type": "Samsung Galaxy A54",
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "battery_replacement_claim",
+        "battery_health_check",
+        "background_app_refresh",
+        "software_update_check"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "battery_drain",
+      "true_issue": "battery_end_of_life",
+      "required_information": [
+        "insurance_verification"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for battery_drain issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "ASK_CLARIFICATION"
+      ],
+      "acceptable_clarification_topics": [
+        "insurance_status",
+        "purchase_date"
+      ],
+      "resolution_path": "battery_replacement_claim",
+      "should_not_do": [
+        "PROVIDE_STEP",
+        "COMPLETE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0060",
+    "ambiguity_level": "clear",
+    "difficulty": "easy",
+    "template_family": "charging_clear_search",
+    "state": {
+      "customer_message": "iPad Pro won't take a charge. Tried OEM cable and a third-party one. Both work on my other phone.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [],
+      "conversation_turn": 0,
+      "available_kb_topics": [
+        "wireless_charging_setup",
+        "cable_troubleshoot",
+        "charging_port_repair",
+        "battery_replacement_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "charging",
+      "true_issue": "charging_port_or_software",
+      "required_information": [],
+      "ideal_action": "SEARCH_KB",
+      "ideal_clarification": "Clarification for charging issue",
+      "acceptable_actions": [
+        "SEARCH_KB",
+        "PROVIDE_STEP"
+      ],
+      "acceptable_clarification_topics": [
+        "port_debris",
+        "cable_type"
+      ],
+      "resolution_path": "port_cleaning_or_restart",
+      "should_not_do": [
+        "COMPLETE",
+        "ESCALATE"
+      ]
+    }
+  },
+  {
+    "scenario_id": "scn_0371",
+    "ambiguity_level": "clear",
+    "difficulty": "medium",
+    "template_family": "lost_stolen_ambiguous_ask_boosted",
+    "state": {
+      "customer_message": "I can't find my phone. I might have left it somewhere or it could be stolen.",
+      "device_type": null,
+      "issue_category": null,
+      "information_collected": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted"
+      ],
+      "conversation_turn": 2,
+      "available_kb_topics": [
+        "remote_lock_wipe",
+        "police_report_filing",
+        "imei_blacklist",
+        "replacement_device_claim"
+      ]
+    },
+    "hidden_ground_truth": {
+      "true_intent": "lost_stolen",
+      "true_issue": "missing_device_unclear",
+      "required_information": [
+        "last_known_location",
+        "lost_or_stolen",
+        "find_my_attempted",
+        "time_since_missing"
+      ],
+      "ideal_action": "ROUTE_CLAIM",
+      "ideal_clarification": "Clarification for lost_stolen issue",
+      "acceptable_actions": [
+        "ROUTE_CLAIM",
+        "SEARCH_KB"
+      ],
+      "acceptable_clarification_topics": [
+        "last_location",
+        "lost_or_stolen",
+        "find_my_status"
+      ],
+      "resolution_path": "locate_then_decide",
+      "should_not_do": [
+        "COMPLETE",
+        "PROVIDE_STEP"
+      ]
+    }
+  }
+]

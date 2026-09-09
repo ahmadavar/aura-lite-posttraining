@@ -1,0 +1,125 @@
+{
+  "n_scenarios": 83,
+  "n_valid_outputs": 83,
+  "format_compliance": 1.0,
+  "composite_reward_mean": 0.44048915662650606,
+  "composite_reward_std": 0.1800938617472782,
+  "intent_accuracy": 0.12048192771084337,
+  "action_accuracy": 0.21686746987951808,
+  "action_accuracy_acceptable": 0.3132530120481928,
+  "missing_info_recall_mean": 0.0,
+  "missing_info_precision_mean": 0,
+  "unnecessary_question_rate": 0.6153846153846154,
+  "avg_output_tokens": 167.19277108433735,
+  "action_distribution": {
+    "SEARCH_KB": 16,
+    "ASK_CLARIFICATION": 13,
+    "ESCALATE": 16,
+    "COMPLETE": 14,
+    "PROVIDE_STEP": 15,
+    "ROUTE_CLAIM": 9
+  },
+  "action_confusion_matrix": {
+    "ASK_CLARIFICATION": {
+      "ASK_CLARIFICATION": 5,
+      "COMPLETE": 3,
+      "ESCALATE": 4,
+      "PROVIDE_STEP": 4,
+      "ROUTE_CLAIM": 3,
+      "SEARCH_KB": 4
+    },
+    "COMPLETE": {
+      "ASK_CLARIFICATION": 2,
+      "COMPLETE": 2,
+      "ESCALATE": 0,
+      "PROVIDE_STEP": 2,
+      "ROUTE_CLAIM": 0,
+      "SEARCH_KB": 0
+    },
+    "ESCALATE": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 1,
+      "ESCALATE": 2,
+      "PROVIDE_STEP": 1,
+      "ROUTE_CLAIM": 1,
+      "SEARCH_KB": 3
+    },
+    "PROVIDE_STEP": {
+      "ASK_CLARIFICATION": 4,
+      "COMPLETE": 2,
+      "ESCALATE": 5,
+      "PROVIDE_STEP": 3,
+      "ROUTE_CLAIM": 2,
+      "SEARCH_KB": 3
+    },
+    "ROUTE_CLAIM": {
+      "ASK_CLARIFICATION": 0,
+      "COMPLETE": 3,
+      "ESCALATE": 2,
+      "PROVIDE_STEP": 1,
+      "ROUTE_CLAIM": 2,
+      "SEARCH_KB": 2
+    },
+    "SEARCH_KB": {
+      "ASK_CLARIFICATION": 2,
+      "COMPLETE": 3,
+      "ESCALATE": 3,
+      "PROVIDE_STEP": 4,
+      "ROUTE_CLAIM": 1,
+      "SEARCH_KB": 4
+    }
+  },
+  "per_action_metrics": {
+    "ASK_CLARIFICATION": {
+      "precision": 0.3846,
+      "recall": 0.2174,
+      "f1": 0.2778,
+      "support": 23
+    },
+    "COMPLETE": {
+      "precision": 0.1429,
+      "recall": 0.3333,
+      "f1": 0.2,
+      "support": 6
+    },
+    "ESCALATE": {
+      "precision": 0.125,
+      "recall": 0.25,
+      "f1": 0.1667,
+      "support": 8
+    },
+    "PROVIDE_STEP": {
+      "precision": 0.2,
+      "recall": 0.1579,
+      "f1": 0.1765,
+      "support": 19
+    },
+    "ROUTE_CLAIM": {
+      "precision": 0.2222,
+      "recall": 0.2,
+      "f1": 0.2105,
+      "support": 10
+    },
+    "SEARCH_KB": {
+      "precision": 0.25,
+      "recall": 0.2353,
+      "f1": 0.2424,
+      "support": 17
+    }
+  },
+  "macro_action_f1": 0.2123,
+  "action_entropy": 2.5613,
+  "per_domain_reward": {
+    "charging": 0.4517,
+    "battery_drain": 0.4032,
+    "black_screen": 0.4985,
+    "data_transfer": 0.3529,
+    "liquid_damage": 0.549,
+    "lost_stolen": 0.3088
+  },
+  "inference_time_sec": 0.0,
+  "condition": "random",
+  "split": "test",
+  "temperature": 0.3,
+  "reward_weights": "default"
+}

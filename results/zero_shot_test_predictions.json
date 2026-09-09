@@ -1,0 +1,1978 @@
+[
+  {
+    "scenario_id": "scn_0314",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has been experiencing issues with their Samsung Galaxy Tab S9 not charging multiple times and has already tried several troubleshooting steps. The customer seems to be frustrated and requests escalation.\",\n  \"intent_assessment\": \"Support Request\",\n  \"missing_information\": [\"Specific details about the problem\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Provide detailed information about the customer's experience and any additional relevant data that could help in diagnosing the issue.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has been experiencing issues with their Samsung Galaxy Tab S9 not charging multiple times and has already tried several troubleshooting steps. The customer seems to be frustrated and requests escalation.",
+      "intent_assessment": "Support Request",
+      "missing_information": [
+        "Specific details about the problem"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide detailed information about the customer's experience and any additional relevant data that could help in diagnosing the issue."
+    },
+    "model_output": {
+      "reasoning": "The customer has been experiencing issues with their Samsung Galaxy Tab S9 not charging multiple times and has already tried several troubleshooting steps. The customer seems to be frustrated and requests escalation.",
+      "intent_assessment": "Support Request",
+      "missing_information": [
+        "Specific details about the problem"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide detailed information about the customer's experience and any additional relevant data that could help in diagnosing the issue."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0074",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their iPad Pro where it keeps turning off due to battery-related problems.\",\n  \"intent_assessment\": \"Battery malfunction\",\n  \"missing_information\": [\"Specific details about when the device turns off\", \"Battery health status\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery issues' or 'iPad Pro battery life' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their iPad Pro where it keeps turning off due to battery-related problems.",
+      "intent_assessment": "Battery malfunction",
+      "missing_information": [
+        "Specific details about when the device turns off",
+        "Battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery issues' or 'iPad Pro battery life' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their iPad Pro where it keeps turning off due to battery-related problems.",
+      "intent_assessment": "Battery malfunction",
+      "missing_information": [
+        "Specific details about when the device turns off",
+        "Battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery issues' or 'iPad Pro battery life' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0050",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has dropped their iPhone 15 Pro in water and experienced issues with charging. They also mentioned putting it in rice as an attempt to dry it out.\",\n  \"intent_assessment\": \"Water damage claim\",\n  \"missing_information\": [\"Type of water involved\", \"Duration of exposure\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Provide more details about the water type (e.g., rainwater, tap water) and duration of exposure.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has dropped their iPhone 15 Pro in water and experienced issues with charging. They also mentioned putting it in rice as an attempt to dry it out.",
+      "intent_assessment": "Water damage claim",
+      "missing_information": [
+        "Type of water involved",
+        "Duration of exposure"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more details about the water type (e.g., rainwater, tap water) and duration of exposure."
+    },
+    "model_output": {
+      "reasoning": "The customer has dropped their iPhone 15 Pro in water and experienced issues with charging. They also mentioned putting it in rice as an attempt to dry it out.",
+      "intent_assessment": "Water damage claim",
+      "missing_information": [
+        "Type of water involved",
+        "Duration of exposure"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more details about the water type (e.g., rainwater, tap water) and duration of exposure."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0313",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has contacted support multiple times regarding their Google Pixel 7 not charging, indicating persistence on their end. They have tried following troubleshooting steps but still face issues.\",\n  \"intent_assessment\": \"Battery Replacement Claim\",\n  \"missing_information\": [\"Specific details about the problem (e.g., when it started, any recent changes in usage)\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Provide more detailed information to better understand the nature of the issue and escalate accordingly.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has contacted support multiple times regarding their Google Pixel 7 not charging, indicating persistence on their end. They have tried following troubleshooting steps but still face issues.",
+      "intent_assessment": "Battery Replacement Claim",
+      "missing_information": [
+        "Specific details about the problem (e.g., when it started, any recent changes in usage)"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more detailed information to better understand the nature of the issue and escalate accordingly."
+    },
+    "model_output": {
+      "reasoning": "The customer has contacted support multiple times regarding their Google Pixel 7 not charging, indicating persistence on their end. They have tried following troubleshooting steps but still face issues.",
+      "intent_assessment": "Battery Replacement Claim",
+      "missing_information": [
+        "Specific details about the problem (e.g., when it started, any recent changes in usage)"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more detailed information to better understand the nature of the issue and escalate accordingly."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0308",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is expressing concern about their device's safety due to unusual physical changes.\",\n  \"intent_assessment\": \"DEVICE_ISSUE\",\n  \"missing_information\": [\"specific details about the swelling or bulging\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Inquire if there have been any recent hardware issues or if this was an unexpected change.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is expressing concern about their device's safety due to unusual physical changes.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "specific details about the swelling or bulging"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Inquire if there have been any recent hardware issues or if this was an unexpected change."
+    },
+    "model_output": {
+      "reasoning": "The customer is expressing concern about their device's safety due to unusual physical changes.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "specific details about the swelling or bulging"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Inquire if there have been any recent hardware issues or if this was an unexpected change."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0040",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is reporting that their Samsung Galaxy Tab S9 battery is not charging properly.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific details about the issue (e.g., how often it stops charging, any error messages)\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Inquire if the customer can describe more about the charging issues or provide any error messages they've encountered.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting that their Samsung Galaxy Tab S9 battery is not charging properly.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific details about the issue (e.g., how often it stops charging, any error messages)"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Inquire if the customer can describe more about the charging issues or provide any error messages they've encountered."
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting that their Samsung Galaxy Tab S9 battery is not charging properly.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific details about the issue (e.g., how often it stops charging, any error messages)"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Inquire if the customer can describe more about the charging issues or provide any error messages they've encountered."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0354",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has successfully resolved their issue by disabling location services in their iPad Pro.\",\n  \"intent_assessment\": \"Battery Drain\",\n  \"missing_information\": [],\n  \"action\": \"PROVIDE_STEP\",\n  \"action_detail\": \"Provide step-by-step instructions or additional troubleshooting tips related to managing location services on an iPad.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has successfully resolved their issue by disabling location services in their iPad Pro.",
+      "intent_assessment": "Battery Drain",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide step-by-step instructions or additional troubleshooting tips related to managing location services on an iPad."
+    },
+    "model_output": {
+      "reasoning": "The customer has successfully resolved their issue by disabling location services in their iPad Pro.",
+      "intent_assessment": "Battery Drain",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide step-by-step instructions or additional troubleshooting tips related to managing location services on an iPad."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0055",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPad Air's battery not charging properly, despite testing the same cable on another device which worked successfully.\",\n  \"intent_assessment\": \"Battery malfunction or compatibility issue\",\n  \"missing_information\": [\"iPad Air model\", \"battery level\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPad Air battery charging issues' to find relevant troubleshooting steps or known solutions.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPad Air's battery not charging properly, despite testing the same cable on another device which worked successfully.",
+      "intent_assessment": "Battery malfunction or compatibility issue",
+      "missing_information": [
+        "iPad Air model",
+        "battery level"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Air battery charging issues' to find relevant troubleshooting steps or known solutions."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPad Air's battery not charging properly, despite testing the same cable on another device which worked successfully.",
+      "intent_assessment": "Battery malfunction or compatibility issue",
+      "missing_information": [
+        "iPad Air model",
+        "battery level"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Air battery charging issues' to find relevant troubleshooting steps or known solutions."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0051",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has dropped their iPhone 14 in water and experienced issues with charging. They have also mentioned putting the phone in rice as an attempt to dry it out.\",\n  \"intent_assessment\": \"Water damage\",\n  \"missing_information\": [\"Type of water involved (e.g., rainwater, seawater)\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for troubleshooting steps related to water damage on iPhones\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has dropped their iPhone 14 in water and experienced issues with charging. They have also mentioned putting the phone in rice as an attempt to dry it out.",
+      "intent_assessment": "Water damage",
+      "missing_information": [
+        "Type of water involved (e.g., rainwater, seawater)"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to water damage on iPhones"
+    },
+    "model_output": {
+      "reasoning": "The customer has dropped their iPhone 14 in water and experienced issues with charging. They have also mentioned putting the phone in rice as an attempt to dry it out.",
+      "intent_assessment": "Water damage",
+      "missing_information": [
+        "Type of water involved (e.g., rainwater, seawater)"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for troubleshooting steps related to water damage on iPhones"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0355",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has successfully resolved their issue by disabling location services in apps, which is a common solution for battery drain.\",\n  \"intent_assessment\": \"battery_management\",\n  \"missing_information\": [],\n  \"action\": \"PROVIDE_STEP\",\n  \"action_detail\": \"Provide step-by-step instructions on how to disable location services in apps.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has successfully resolved their issue by disabling location services in apps, which is a common solution for battery drain.",
+      "intent_assessment": "battery_management",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide step-by-step instructions on how to disable location services in apps."
+    },
+    "model_output": {
+      "reasoning": "The customer has successfully resolved their issue by disabling location services in apps, which is a common solution for battery drain.",
+      "intent_assessment": "battery_management",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide step-by-step instructions on how to disable location services in apps."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0041",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is reporting an issue with their Samsung Galaxy S24 device related to poor battery charging.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific details about the problem (e.g., symptoms, duration)\", \"customer's contact information\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'Samsung Galaxy S24 battery charging issues' in the available knowledge base topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting an issue with their Samsung Galaxy S24 device related to poor battery charging.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific details about the problem (e.g., symptoms, duration)",
+        "customer's contact information"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy S24 battery charging issues' in the available knowledge base topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting an issue with their Samsung Galaxy S24 device related to poor battery charging.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific details about the problem (e.g., symptoms, duration)",
+        "customer's contact information"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy S24 battery charging issues' in the available knowledge base topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0063",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their iPhone 14 not charging properly due to lint in the charging port.\",\n  \"intent_assessment\": \"battery_replacement_claim\",\n  \"missing_information\": [\"specific details about the lint causing the problem\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port cleaning' under the 'charging_port_repair' topic.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their iPhone 14 not charging properly due to lint in the charging port.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific details about the lint causing the problem"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' under the 'charging_port_repair' topic."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their iPhone 14 not charging properly due to lint in the charging port.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific details about the lint causing the problem"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' under the 'charging_port_repair' topic."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0353",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has successfully resolved their issue by disabling background app refresh, indicating that they have completed the process.\",\n  \"intent_assessment\": \"RESOLVE_ISSUE\",\n  \"missing_information\": [],\n  \"action\": \"COMPLETE\",\n  \"action_detail\": \"\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has successfully resolved their issue by disabling background app refresh, indicating that they have completed the process.",
+      "intent_assessment": "RESOLVE_ISSUE",
+      "missing_information": [],
+      "action": "COMPLETE",
+      "action_detail": ""
+    },
+    "model_output": null,
+    "valid": false
+  },
+  {
+    "scenario_id": "scn_0057",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their Samsung Galaxy Tab S9 regarding its battery not charging properly, despite testing other devices using the same cable.\",\n  \"intent_assessment\": \"battery_failure\",\n  \"missing_information\": [\"specific model number or serial number of the device\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'Samsung Galaxy Tab S9 battery charging issues' to find relevant troubleshooting steps or solutions.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their Samsung Galaxy Tab S9 regarding its battery not charging properly, despite testing other devices using the same cable.",
+      "intent_assessment": "battery_failure",
+      "missing_information": [
+        "specific model number or serial number of the device"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy Tab S9 battery charging issues' to find relevant troubleshooting steps or solutions."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their Samsung Galaxy Tab S9 regarding its battery not charging properly, despite testing other devices using the same cable.",
+      "intent_assessment": "battery_failure",
+      "missing_information": [
+        "specific model number or serial number of the device"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy Tab S9 battery charging issues' to find relevant troubleshooting steps or solutions."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0038",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing a common issue related to device performance or functionality.\",\n  \"intent_assessment\": \"Battery Performance Issue\",\n  \"missing_information\": [\"Specific model of iPad Pro\", \"Details about the charging port\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPad Pro battery speed issues' in the available knowledge base topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing a common issue related to device performance or functionality.",
+      "intent_assessment": "Battery Performance Issue",
+      "missing_information": [
+        "Specific model of iPad Pro",
+        "Details about the charging port"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Pro battery speed issues' in the available knowledge base topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing a common issue related to device performance or functionality.",
+      "intent_assessment": "Battery Performance Issue",
+      "missing_information": [
+        "Specific model of iPad Pro",
+        "Details about the charging port"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Pro battery speed issues' in the available knowledge base topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0062",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their Samsung Galaxy S23 device not charging properly due to lint in the port.\",\n  \"intent_assessment\": \"DEVICE_ISSUE\",\n  \"missing_information\": [\"Port cleaning instructions\", \"Cable troubleshooting steps\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'port cleaning instructions' and 'cable troubleshooting steps' related to Samsung Galaxy S23.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their Samsung Galaxy S23 device not charging properly due to lint in the port.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Port cleaning instructions",
+        "Cable troubleshooting steps"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'port cleaning instructions' and 'cable troubleshooting steps' related to Samsung Galaxy S23."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their Samsung Galaxy S23 device not charging properly due to lint in the port.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Port cleaning instructions",
+        "Cable troubleshooting steps"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'port cleaning instructions' and 'cable troubleshooting steps' related to Samsung Galaxy S23."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0102",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer needs assistance in filing a claim due to their Motorola Edge device having a low battery health status.\",\n  \"intent_assessment\": \"battery_issue\",\n  \"missing_information\": [\"customer_name\", \"device_model\"],\n  \"action\": \"ROUTE_CLAIM\",\n  \"action_detail\": null\n}\n```",
+    "parsed": {
+      "reasoning": "The customer needs assistance in filing a claim due to their Motorola Edge device having a low battery health status.",
+      "intent_assessment": "battery_issue",
+      "missing_information": [
+        "customer_name",
+        "device_model"
+      ],
+      "action": "ROUTE_CLAIM",
+      "action_detail": null
+    },
+    "model_output": null,
+    "valid": false
+  },
+  {
+    "scenario_id": "scn_0031",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPhone 15 Pro where the screen appears black but still vibrates during phone calls. They have already attempted to press the power button without success.\",\n  \"intent_assessment\": \"Screen malfunction\",\n  \"missing_information\": [\"Specific details about the vibration pattern\", \"Details on how long the call has been ongoing\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask the customer if they can describe the vibration pattern more clearly or provide additional details such as the duration of the call.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 Pro where the screen appears black but still vibrates during phone calls. They have already attempted to press the power button without success.",
+      "intent_assessment": "Screen malfunction",
+      "missing_information": [
+        "Specific details about the vibration pattern",
+        "Details on how long the call has been ongoing"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask the customer if they can describe the vibration pattern more clearly or provide additional details such as the duration of the call."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 Pro where the screen appears black but still vibrates during phone calls. They have already attempted to press the power button without success.",
+      "intent_assessment": "Screen malfunction",
+      "missing_information": [
+        "Specific details about the vibration pattern",
+        "Details on how long the call has been ongoing"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask the customer if they can describe the vibration pattern more clearly or provide additional details such as the duration of the call."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0065",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their phone not charging due to debris in the charging port, which suggests they need help cleaning the port safely.\",\n  \"intent_assessment\": \"Charging Port Issue\",\n  \"missing_information\": [\"Type of debris found\", \"Current location of the charging port\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port cleaning' on the available KB topics.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their phone not charging due to debris in the charging port, which suggests they need help cleaning the port safely.",
+      "intent_assessment": "Charging Port Issue",
+      "missing_information": [
+        "Type of debris found",
+        "Current location of the charging port"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' on the available KB topics."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their phone not charging due to debris in the charging port, which suggests they need help cleaning the port safely.",
+      "intent_assessment": "Charging Port Issue",
+      "missing_information": [
+        "Type of debris found",
+        "Current location of the charging port"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' on the available KB topics."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0356",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has successfully resolved their issue by turning off location services in their Samsung Galaxy A54, which resulted in improved battery performance.\",\n  \"intent_assessment\": \"battery management\",\n  \"missing_information\": [],\n  \"action\": \"ROUTE_CLAIM\",\n  \"action_detail\": null\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has successfully resolved their issue by turning off location services in their Samsung Galaxy A54, which resulted in improved battery performance.",
+      "intent_assessment": "battery management",
+      "missing_information": [],
+      "action": "ROUTE_CLAIM",
+      "action_detail": null
+    },
+    "model_output": null,
+    "valid": false
+  },
+  {
+    "scenario_id": "scn_0046",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues related to their Samsung Galaxy A54 device after it was exposed to water, which could indicate a hardware problem.\",\n  \"intent_assessment\": \"battery_replacement_claim\",\n  \"missing_information\": [\"specific details about the extent of the water damage\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Provide more detailed information on the extent of the water damage and any other symptoms experienced by the user.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues related to their Samsung Galaxy A54 device after it was exposed to water, which could indicate a hardware problem.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific details about the extent of the water damage"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more detailed information on the extent of the water damage and any other symptoms experienced by the user."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues related to their Samsung Galaxy A54 device after it was exposed to water, which could indicate a hardware problem.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific details about the extent of the water damage"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more detailed information on the extent of the water damage and any other symptoms experienced by the user."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0375",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an incomplete transfer that resulted in lost contacts. The available KB topics suggest different methods for transferring data.\",\n  \"intent_assessment\": \"Data Transfer Issue\",\n  \"missing_information\": [\"new_device_available\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'manual_transfer_usb' to understand how to manually transfer contacts after a device change\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an incomplete transfer that resulted in lost contacts. The available KB topics suggest different methods for transferring data.",
+      "intent_assessment": "Data Transfer Issue",
+      "missing_information": [
+        "new_device_available"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'manual_transfer_usb' to understand how to manually transfer contacts after a device change"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an incomplete transfer that resulted in lost contacts. The available KB topics suggest different methods for transferring data.",
+      "intent_assessment": "Data Transfer Issue",
+      "missing_information": [
+        "new_device_available"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'manual_transfer_usb' to understand how to manually transfer contacts after a device change"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0312",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has been calling multiple times regarding their Samsung Galaxy Tab S9 charging issue without resolution. They have already attempted troubleshooting steps like using a new cable, cleaning the port, and performing a factory reset but still face issues.\",\n  \"intent_assessment\": \"Tech Support Issue\",\n  \"missing_information\": [\"Specific details of the charging problem\", \"Model number or serial number\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging_port_repair' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has been calling multiple times regarding their Samsung Galaxy Tab S9 charging issue without resolution. They have already attempted troubleshooting steps like using a new cable, cleaning the port, and performing a factory reset but still face issues.",
+      "intent_assessment": "Tech Support Issue",
+      "missing_information": [
+        "Specific details of the charging problem",
+        "Model number or serial number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging_port_repair' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer has been calling multiple times regarding their Samsung Galaxy Tab S9 charging issue without resolution. They have already attempted troubleshooting steps like using a new cable, cleaning the port, and performing a factory reset but still face issues.",
+      "intent_assessment": "Tech Support Issue",
+      "missing_information": [
+        "Specific details of the charging problem",
+        "Model number or serial number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging_port_repair' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0069",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with charging their iPhone 15 Pro due to a clogged charging port, which they have attempted to resolve by blowing into it but without success.\",\n  \"intent_assessment\": \"repair\",\n  \"missing_information\": [\"specific details about the clog or obstruction in the charging port\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask the customer if there were any unusual sounds when trying to blow into the charging port, such as hissing or crackling noises, which could indicate an electrical problem.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with charging their iPhone 15 Pro due to a clogged charging port, which they have attempted to resolve by blowing into it but without success.",
+      "intent_assessment": "repair",
+      "missing_information": [
+        "specific details about the clog or obstruction in the charging port"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask the customer if there were any unusual sounds when trying to blow into the charging port, such as hissing or crackling noises, which could indicate an electrical problem."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with charging their iPhone 15 Pro due to a clogged charging port, which they have attempted to resolve by blowing into it but without success.",
+      "intent_assessment": "repair",
+      "missing_information": [
+        "specific details about the clog or obstruction in the charging port"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask the customer if there were any unusual sounds when trying to blow into the charging port, such as hissing or crackling noises, which could indicate an electrical problem."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0070",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their phone dying quickly, which could be due to a failing battery or other hardware problems.\",\n  \"intent_assessment\": \"Battery-related concern\",\n  \"missing_information\": [\"Specific model of iPhone\", \"Details about the device's current status\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery life' on the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their phone dying quickly, which could be due to a failing battery or other hardware problems.",
+      "intent_assessment": "Battery-related concern",
+      "missing_information": [
+        "Specific model of iPhone",
+        "Details about the device's current status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery life' on the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their phone dying quickly, which could be due to a failing battery or other hardware problems.",
+      "intent_assessment": "Battery-related concern",
+      "missing_information": [
+        "Specific model of iPhone",
+        "Details about the device's current status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery life' on the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0053",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their iPad Air not charging properly, which suggests a problem with the charging port or related components.\",\n  \"intent_assessment\": \"battery_replacement_claim\",\n  \"missing_information\": [\"specific model number of the iPad Air\", \"details about the charging ports\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPad Air charging issues' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their iPad Air not charging properly, which suggests a problem with the charging port or related components.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model number of the iPad Air",
+        "details about the charging ports"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Air charging issues' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their iPad Air not charging properly, which suggests a problem with the charging port or related components.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model number of the iPad Air",
+        "details about the charging ports"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Air charging issues' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0033",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue where their Motorola Edge device has gone black without any visible damage like cracks or drops. The power button does not work either. The customer needs guidance on how to perform a force restart.\",\n  \"intent_assessment\": \"Device malfunction\",\n  \"missing_information\": [\"Model number of the Motorola Edge\", \"Current operating system version\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'force restart steps' related to Motorola devices\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue where their Motorola Edge device has gone black without any visible damage like cracks or drops. The power button does not work either. The customer needs guidance on how to perform a force restart.",
+      "intent_assessment": "Device malfunction",
+      "missing_information": [
+        "Model number of the Motorola Edge",
+        "Current operating system version"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'force restart steps' related to Motorola devices"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue where their Motorola Edge device has gone black without any visible damage like cracks or drops. The power button does not work either. The customer needs guidance on how to perform a force restart.",
+      "intent_assessment": "Device malfunction",
+      "missing_information": [
+        "Model number of the Motorola Edge",
+        "Current operating system version"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'force restart steps' related to Motorola devices"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0078",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues related to their iPhone 15 device running out of battery quickly.\",\n  \"intent_assessment\": \"Battery malfunction or low power consumption\",\n  \"missing_information\": [\"Specific details about the 'something wrong'\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for articles on iPhone 15 battery performance issues\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues related to their iPhone 15 device running out of battery quickly.",
+      "intent_assessment": "Battery malfunction or low power consumption",
+      "missing_information": [
+        "Specific details about the 'something wrong'"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for articles on iPhone 15 battery performance issues"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues related to their iPhone 15 device running out of battery quickly.",
+      "intent_assessment": "Battery malfunction or low power consumption",
+      "missing_information": [
+        "Specific details about the 'something wrong'"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for articles on iPhone 15 battery performance issues"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0064",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPhone 15 not charging due to debris in the charging port.\",\n  \"intent_assessment\": \"battery_replacement\",\n  \"missing_information\": [\"specific location of the debris\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'cleaning debris from iPhone charging port' instructions\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 not charging due to debris in the charging port.",
+      "intent_assessment": "battery_replacement",
+      "missing_information": [
+        "specific location of the debris"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'cleaning debris from iPhone charging port' instructions"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 not charging due to debris in the charging port.",
+      "intent_assessment": "battery_replacement",
+      "missing_information": [
+        "specific location of the debris"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'cleaning debris from iPhone charging port' instructions"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0044",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has reported that their phone's battery is not charging properly on an iPhone 15 Pro.\",\n  \"intent_assessment\": \"Battery malfunction or charging issues\",\n  \"missing_information\": [\"Specific details about the current state of the phone (e.g., any error messages, recent usage patterns)\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery malfunction' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has reported that their phone's battery is not charging properly on an iPhone 15 Pro.",
+      "intent_assessment": "Battery malfunction or charging issues",
+      "missing_information": [
+        "Specific details about the current state of the phone (e.g., any error messages, recent usage patterns)"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery malfunction' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer has reported that their phone's battery is not charging properly on an iPhone 15 Pro.",
+      "intent_assessment": "Battery malfunction or charging issues",
+      "missing_information": [
+        "Specific details about the current state of the phone (e.g., any error messages, recent usage patterns)"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery malfunction' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0061",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their Google Pixel 8 where the device stops charging due to lint in the charging port.\",\n  \"intent_assessment\": \"battery_replacement_claim\",\n  \"missing_information\": [\"specific model or serial number of the Google Pixel 8\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port cleaning' under the 'charging port cleaning' topic.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their Google Pixel 8 where the device stops charging due to lint in the charging port.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model or serial number of the Google Pixel 8"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' under the 'charging port cleaning' topic."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their Google Pixel 8 where the device stops charging due to lint in the charging port.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model or serial number of the Google Pixel 8"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' under the 'charging port cleaning' topic."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0072",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is concerned about their phone dying quickly and suspects it might be due to the battery.\",\n  \"intent_assessment\": \"battery-related issue\",\n  \"missing_information\": [\"specific model or brand of the phone\", \"current battery health status\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery health check' in the available KB topics.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is concerned about their phone dying quickly and suspects it might be due to the battery.",
+      "intent_assessment": "battery-related issue",
+      "missing_information": [
+        "specific model or brand of the phone",
+        "current battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery health check' in the available KB topics."
+    },
+    "model_output": {
+      "reasoning": "The customer is concerned about their phone dying quickly and suspects it might be due to the battery.",
+      "intent_assessment": "battery-related issue",
+      "missing_information": [
+        "specific model or brand of the phone",
+        "current battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery health check' in the available KB topics."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0036",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue where their Samsung Galaxy S24 has frozen and gone to a black screen, which suggests a software or hardware problem.\",\n  \"intent_assessment\": \"Hardware failure\",\n  \"missing_information\": [\"Model number\", \"Specific error messages\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'black screen on Samsung Galaxy S24' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue where their Samsung Galaxy S24 has frozen and gone to a black screen, which suggests a software or hardware problem.",
+      "intent_assessment": "Hardware failure",
+      "missing_information": [
+        "Model number",
+        "Specific error messages"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'black screen on Samsung Galaxy S24' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue where their Samsung Galaxy S24 has frozen and gone to a black screen, which suggests a software or hardware problem.",
+      "intent_assessment": "Hardware failure",
+      "missing_information": [
+        "Model number",
+        "Specific error messages"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'black screen on Samsung Galaxy S24' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0073",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing a device malfunction (turning off) that could be related to their battery.\",\n  \"intent_assessment\": \"Battery-related issue\",\n  \"missing_information\": [\"Specific details about when the device turns off\", \"Details on how often it happens\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery health check' or 'low power mode' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing a device malfunction (turning off) that could be related to their battery.",
+      "intent_assessment": "Battery-related issue",
+      "missing_information": [
+        "Specific details about when the device turns off",
+        "Details on how often it happens"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery health check' or 'low power mode' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing a device malfunction (turning off) that could be related to their battery.",
+      "intent_assessment": "Battery-related issue",
+      "missing_information": [
+        "Specific details about when the device turns off",
+        "Details on how often it happens"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery health check' or 'low power mode' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0310",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their Motorola Edge device that include overheating, an unpleasant smell, and swelling in the battery area.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific symptoms\", \"device model\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'Motorola Edge' battery issues or problems related to overheating, smell, and swelling.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their Motorola Edge device that include overheating, an unpleasant smell, and swelling in the battery area.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific symptoms",
+        "device model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Motorola Edge' battery issues or problems related to overheating, smell, and swelling."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their Motorola Edge device that include overheating, an unpleasant smell, and swelling in the battery area.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific symptoms",
+        "device model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Motorola Edge' battery issues or problems related to overheating, smell, and swelling."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0309",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPhone 15 that include overheating, a burnt smell from the battery area, and swelling.\",\n  \"intent_assessment\": \"battery malfunction or damage\",\n  \"missing_information\": [\"specific symptoms\", \"exact temperature readings\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPhone 15 overheating' and 'swollen battery area' in the available KB topics.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 that include overheating, a burnt smell from the battery area, and swelling.",
+      "intent_assessment": "battery malfunction or damage",
+      "missing_information": [
+        "specific symptoms",
+        "exact temperature readings"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 15 overheating' and 'swollen battery area' in the available KB topics."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 that include overheating, a burnt smell from the battery area, and swelling.",
+      "intent_assessment": "battery malfunction or damage",
+      "missing_information": [
+        "specific symptoms",
+        "exact temperature readings"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 15 overheating' and 'swollen battery area' in the available KB topics."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0049",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has dropped their Google Pixel 7 in water and experienced issues with charging. The device is now damaged, requiring immediate attention.\",\n  \"intent_assessment\": \"DEVICE_FAILURE\",\n  \"missing_information\": [\"water_damage_inspection\", \"charging_port_status\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Request professional repair services immediately to assess and fix any water damage or other potential issues affecting the device.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has dropped their Google Pixel 7 in water and experienced issues with charging. The device is now damaged, requiring immediate attention.",
+      "intent_assessment": "DEVICE_FAILURE",
+      "missing_information": [
+        "water_damage_inspection",
+        "charging_port_status"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Request professional repair services immediately to assess and fix any water damage or other potential issues affecting the device."
+    },
+    "model_output": {
+      "reasoning": "The customer has dropped their Google Pixel 7 in water and experienced issues with charging. The device is now damaged, requiring immediate attention.",
+      "intent_assessment": "DEVICE_FAILURE",
+      "missing_information": [
+        "water_damage_inspection",
+        "charging_port_status"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Request professional repair services immediately to assess and fix any water damage or other potential issues affecting the device."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0058",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their Google Pixel 7 not taking a charge, which could be related to the charging port or the battery.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific model number of the Google Pixel 7\", \"details about the charging cables used\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port cleaning' and 'wireless charging setup' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their Google Pixel 7 not taking a charge, which could be related to the charging port or the battery.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model number of the Google Pixel 7",
+        "details about the charging cables used"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' and 'wireless charging setup' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their Google Pixel 7 not taking a charge, which could be related to the charging port or the battery.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model number of the Google Pixel 7",
+        "details about the charging cables used"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' and 'wireless charging setup' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0280",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues after their device was exposed to water due to rain. The primary concern seems to be that the camera lens may have become fogged.\",\n  \"intent_assessment\": \"water_damage\",\n  \"missing_information\": [\"specific details about the extent of the damage\", \"instructions on how to clean or dry the device\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'liquid damage first aid' under the available KB topics.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues after their device was exposed to water due to rain. The primary concern seems to be that the camera lens may have become fogged.",
+      "intent_assessment": "water_damage",
+      "missing_information": [
+        "specific details about the extent of the damage",
+        "instructions on how to clean or dry the device"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'liquid damage first aid' under the available KB topics."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues after their device was exposed to water due to rain. The primary concern seems to be that the camera lens may have become fogged.",
+      "intent_assessment": "water_damage",
+      "missing_information": [
+        "specific details about the extent of the damage",
+        "instructions on how to clean or dry the device"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'liquid damage first aid' under the available KB topics."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0045",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is reporting that their phone's battery is not charging properly, which suggests an issue related to the charging mechanism or the device itself.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific details about the current state of the charging port\", \"details on how long the battery has been non-functional\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging issues' under the 'wireless_charging_setup' category in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting that their phone's battery is not charging properly, which suggests an issue related to the charging mechanism or the device itself.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific details about the current state of the charging port",
+        "details on how long the battery has been non-functional"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging issues' under the 'wireless_charging_setup' category in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting that their phone's battery is not charging properly, which suggests an issue related to the charging mechanism or the device itself.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific details about the current state of the charging port",
+        "details on how long the battery has been non-functional"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging issues' under the 'wireless_charging_setup' category in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0278",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues related to their Samsung Galaxy S23 after getting wet in the rain. The camera fogging up suggests potential damage from moisture.\",\n  \"intent_assessment\": \"water_damage\",\n  \"missing_information\": [\"specific details about the extent of the water exposure\", \"previous attempts at troubleshooting\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'liquid_damage_first_aid' or similar relevant topic\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues related to their Samsung Galaxy S23 after getting wet in the rain. The camera fogging up suggests potential damage from moisture.",
+      "intent_assessment": "water_damage",
+      "missing_information": [
+        "specific details about the extent of the water exposure",
+        "previous attempts at troubleshooting"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'liquid_damage_first_aid' or similar relevant topic"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues related to their Samsung Galaxy S23 after getting wet in the rain. The camera fogging up suggests potential damage from moisture.",
+      "intent_assessment": "water_damage",
+      "missing_information": [
+        "specific details about the extent of the water exposure",
+        "previous attempts at troubleshooting"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'liquid_damage_first_aid' or similar relevant topic"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0039",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing a common issue related to their device's charging speed.\",\n  \"intent_assessment\": \"DEVICE_ISSUE\",\n  \"missing_information\": [\"Specific model or brand of the device\", \"Expected charging time\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging issues on Samsung Galaxy A54' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing a common issue related to their device's charging speed.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Specific model or brand of the device",
+        "Expected charging time"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging issues on Samsung Galaxy A54' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing a common issue related to their device's charging speed.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Specific model or brand of the device",
+        "Expected charging time"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging issues on Samsung Galaxy A54' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0100",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has reported that their Google Pixel 7 battery health is very low (58%) and is experiencing issues due to this. The customer wants to file a claim.\",\n  \"intent_assessment\": \"battery-related issue\",\n  \"missing_information\": [\"specific details about the battery health status\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery replacement claim' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has reported that their Google Pixel 7 battery health is very low (58%) and is experiencing issues due to this. The customer wants to file a claim.",
+      "intent_assessment": "battery-related issue",
+      "missing_information": [
+        "specific details about the battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery replacement claim' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer has reported that their Google Pixel 7 battery health is very low (58%) and is experiencing issues due to this. The customer wants to file a claim.",
+      "intent_assessment": "battery-related issue",
+      "missing_information": [
+        "specific details about the battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery replacement claim' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0035",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue where their iPhone 14 has frozen and gone to a black screen, which suggests a software or hardware problem.\",\n  \"intent_assessment\": \"device malfunction\",\n  \"missing_information\": [\"specific symptoms\", \"exact model number\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPhone 14 freezing on black screen' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue where their iPhone 14 has frozen and gone to a black screen, which suggests a software or hardware problem.",
+      "intent_assessment": "device malfunction",
+      "missing_information": [
+        "specific symptoms",
+        "exact model number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 14 freezing on black screen' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue where their iPhone 14 has frozen and gone to a black screen, which suggests a software or hardware problem.",
+      "intent_assessment": "device malfunction",
+      "missing_information": [
+        "specific symptoms",
+        "exact model number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 14 freezing on black screen' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0037",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue where their iPhone 15 has frozen and gone to a black screen after trying various troubleshooting steps.\",\n  \"intent_assessment\": \"Hardware failure or software glitch\",\n  \"missing_information\": [\"specific error message\", \"current state of the device\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPhone 15 freezing on black screen' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue where their iPhone 15 has frozen and gone to a black screen after trying various troubleshooting steps.",
+      "intent_assessment": "Hardware failure or software glitch",
+      "missing_information": [
+        "specific error message",
+        "current state of the device"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 15 freezing on black screen' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue where their iPhone 15 has frozen and gone to a black screen after trying various troubleshooting steps.",
+      "intent_assessment": "Hardware failure or software glitch",
+      "missing_information": [
+        "specific error message",
+        "current state of the device"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 15 freezing on black screen' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0029",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue where their Motorola Edge device has a black screen while still vibrating during phone calls, despite not being damaged or soaked in water. The user has already attempted to press the power button without success.\",\n  \"intent_assessment\": \"DEVICE_ISSUE\",\n  \"missing_information\": [\"specific model number\", \"device serial number\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'black screen on Motorola Edge' issues\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue where their Motorola Edge device has a black screen while still vibrating during phone calls, despite not being damaged or soaked in water. The user has already attempted to press the power button without success.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "specific model number",
+        "device serial number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'black screen on Motorola Edge' issues"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue where their Motorola Edge device has a black screen while still vibrating during phone calls, despite not being damaged or soaked in water. The user has already attempted to press the power button without success.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "specific model number",
+        "device serial number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'black screen on Motorola Edge' issues"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0056",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPhone 15's battery not charging properly despite testing the cable on another device and confirming that the port appears to be functioning correctly.\",\n  \"intent_assessment\": \"battery_issues\",\n  \"missing_information\": [\"specific model or version of iPhone\", \"details about the charging setup\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPhone 15 battery charging issues' under the 'cable_troubleshoot' category\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15's battery not charging properly despite testing the cable on another device and confirming that the port appears to be functioning correctly.",
+      "intent_assessment": "battery_issues",
+      "missing_information": [
+        "specific model or version of iPhone",
+        "details about the charging setup"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 15 battery charging issues' under the 'cable_troubleshoot' category"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15's battery not charging properly despite testing the cable on another device and confirming that the port appears to be functioning correctly.",
+      "intent_assessment": "battery_issues",
+      "missing_information": [
+        "specific model or version of iPhone",
+        "details about the charging setup"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPhone 15 battery charging issues' under the 'cable_troubleshoot' category"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0030",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their Google Pixel 7 device where the screen appears black while still vibrating during phone calls. The vibration suggests that there might be an internal problem rather than external factors like water damage.\",\n  \"intent_assessment\": \"screen malfunction\",\n  \"missing_information\": [\"specific details about the vibration pattern\", \"history of similar issues\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'vibration issues on Google Pixel 7' to find relevant troubleshooting steps or user reports.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their Google Pixel 7 device where the screen appears black while still vibrating during phone calls. The vibration suggests that there might be an internal problem rather than external factors like water damage.",
+      "intent_assessment": "screen malfunction",
+      "missing_information": [
+        "specific details about the vibration pattern",
+        "history of similar issues"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'vibration issues on Google Pixel 7' to find relevant troubleshooting steps or user reports."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their Google Pixel 7 device where the screen appears black while still vibrating during phone calls. The vibration suggests that there might be an internal problem rather than external factors like water damage.",
+      "intent_assessment": "screen malfunction",
+      "missing_information": [
+        "specific details about the vibration pattern",
+        "history of similar issues"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'vibration issues on Google Pixel 7' to find relevant troubleshooting steps or user reports."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0068",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPad Air's charging port not functioning properly after attempting to clear it by blowing air into it.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific model or serial number of the iPad Air\", \"details about the attempt to blow air into the charging port\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port repair' under the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPad Air's charging port not functioning properly after attempting to clear it by blowing air into it.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model or serial number of the iPad Air",
+        "details about the attempt to blow air into the charging port"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port repair' under the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPad Air's charging port not functioning properly after attempting to clear it by blowing air into it.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model or serial number of the iPad Air",
+        "details about the attempt to blow air into the charging port"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port repair' under the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0386",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer reports that their phone's screen is dark, which could indicate a hardware or software issue.\",\n  \"intent_assessment\": \"screen_issue\",\n  \"missing_information\": [\"specific model of the phone\", \"recent events leading to this issue\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'dark screen' issues on the phone model and related troubleshooting steps in the available KB topics.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer reports that their phone's screen is dark, which could indicate a hardware or software issue.",
+      "intent_assessment": "screen_issue",
+      "missing_information": [
+        "specific model of the phone",
+        "recent events leading to this issue"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'dark screen' issues on the phone model and related troubleshooting steps in the available KB topics."
+    },
+    "model_output": {
+      "reasoning": "The customer reports that their phone's screen is dark, which could indicate a hardware or software issue.",
+      "intent_assessment": "screen_issue",
+      "missing_information": [
+        "specific model of the phone",
+        "recent events leading to this issue"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'dark screen' issues on the phone model and related troubleshooting steps in the available KB topics."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0101",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer reports that their Samsung Galaxy Tab S9 has a severely low battery health status (58%) and is struggling to use the device due to this issue.\",\n  \"intent_assessment\": \"battery_failure\",\n  \"missing_information\": [\"device model\", \"current battery level\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'battery_health_check' and 'battery_replacement_claim' in the available knowledge base topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer reports that their Samsung Galaxy Tab S9 has a severely low battery health status (58%) and is struggling to use the device due to this issue.",
+      "intent_assessment": "battery_failure",
+      "missing_information": [
+        "device model",
+        "current battery level"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery_health_check' and 'battery_replacement_claim' in the available knowledge base topics"
+    },
+    "model_output": {
+      "reasoning": "The customer reports that their Samsung Galaxy Tab S9 has a severely low battery health status (58%) and is struggling to use the device due to this issue.",
+      "intent_assessment": "battery_failure",
+      "missing_information": [
+        "device model",
+        "current battery level"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'battery_health_check' and 'battery_replacement_claim' in the available knowledge base topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0071",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their phone dying quickly, which could potentially be related to the battery.\",\n  \"intent_assessment\": \"Battery-related issue\",\n  \"missing_information\": [\"specific symptoms of 'phone dies fast'\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask about any other symptoms or behaviors that occur when the phone dies quickly.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their phone dying quickly, which could potentially be related to the battery.",
+      "intent_assessment": "Battery-related issue",
+      "missing_information": [
+        "specific symptoms of 'phone dies fast'"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask about any other symptoms or behaviors that occur when the phone dies quickly."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their phone dying quickly, which could potentially be related to the battery.",
+      "intent_assessment": "Battery-related issue",
+      "missing_information": [
+        "specific symptoms of 'phone dies fast'"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask about any other symptoms or behaviors that occur when the phone dies quickly."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0279",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues after their device was exposed to water due to a rainstorm.\",\n  \"intent_assessment\": \"Water Damage\",\n  \"missing_information\": [\"Specific details about the extent of the water damage\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'water damage indicator' or similar terms related to identifying if the device requires professional repair.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues after their device was exposed to water due to a rainstorm.",
+      "intent_assessment": "Water Damage",
+      "missing_information": [
+        "Specific details about the extent of the water damage"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage indicator' or similar terms related to identifying if the device requires professional repair."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues after their device was exposed to water due to a rainstorm.",
+      "intent_assessment": "Water Damage",
+      "missing_information": [
+        "Specific details about the extent of the water damage"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage indicator' or similar terms related to identifying if the device requires professional repair."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0383",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue where their photos were not transferred correctly after moving to a new device.\",\n  \"intent_assessment\": \"PROBLEM\",\n  \"missing_information\": [\"transfer_password\", \"new_phone_model\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask about any password or additional steps required for photo transfers.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue where their photos were not transferred correctly after moving to a new device.",
+      "intent_assessment": "PROBLEM",
+      "missing_information": [
+        "transfer_password",
+        "new_phone_model"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask about any password or additional steps required for photo transfers."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue where their photos were not transferred correctly after moving to a new device.",
+      "intent_assessment": "PROBLEM",
+      "missing_information": [
+        "transfer_password",
+        "new_phone_model"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask about any password or additional steps required for photo transfers."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0043",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing charging issues on their iPhone 16, which could be due to various reasons such as a faulty charger or damaged charging port.\",\n  \"intent_assessment\": \"DEVICE_ISSUE\",\n  \"missing_information\": [\"Specific details about the charging problems (e.g., how often it happens, symptoms like no charge, slow charge)\", \"Details about the iPhone model\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for common causes of charging issues on an iPhone 16\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing charging issues on their iPhone 16, which could be due to various reasons such as a faulty charger or damaged charging port.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Specific details about the charging problems (e.g., how often it happens, symptoms like no charge, slow charge)",
+        "Details about the iPhone model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for common causes of charging issues on an iPhone 16"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing charging issues on their iPhone 16, which could be due to various reasons such as a faulty charger or damaged charging port.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Specific details about the charging problems (e.g., how often it happens, symptoms like no charge, slow charge)",
+        "Details about the iPhone model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for common causes of charging issues on an iPhone 16"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0054",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with charging their Samsung Galaxy Tab S9, which suggests they may need assistance with either cleaning or repairing the charging port.\",\n  \"intent_assessment\": \"battery_replacement_claim\",\n  \"missing_information\": [\"specific model of Samsung Galaxy Tab S9\", \"details of the charging ports\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging_port_repair' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with charging their Samsung Galaxy Tab S9, which suggests they may need assistance with either cleaning or repairing the charging port.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model of Samsung Galaxy Tab S9",
+        "details of the charging ports"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging_port_repair' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with charging their Samsung Galaxy Tab S9, which suggests they may need assistance with either cleaning or repairing the charging port.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model of Samsung Galaxy Tab S9",
+        "details of the charging ports"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging_port_repair' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0052",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their iPad Pro not charging, which suggests a problem with the charging port or power source.\",\n  \"intent_assessment\": \"Charging malfunction\",\n  \"missing_information\": [\"iPad Pro model\", \"specific details about the charging issues\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port cleaning' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their iPad Pro not charging, which suggests a problem with the charging port or power source.",
+      "intent_assessment": "Charging malfunction",
+      "missing_information": [
+        "iPad Pro model",
+        "specific details about the charging issues"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their iPad Pro not charging, which suggests a problem with the charging port or power source.",
+      "intent_assessment": "Charging malfunction",
+      "missing_information": [
+        "iPad Pro model",
+        "specific details about the charging issues"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0367",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is concerned about losing their Samsung Galaxy A54 device, which suggests they may need assistance in finding it or filing an insurance claim.\",\n  \"intent_assessment\": \"Lost/Found Device\",\n  \"missing_information\": [\"device model\", \"last known location\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'find_my_device' and 'insurance_claim_lost'\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is concerned about losing their Samsung Galaxy A54 device, which suggests they may need assistance in finding it or filing an insurance claim.",
+      "intent_assessment": "Lost/Found Device",
+      "missing_information": [
+        "device model",
+        "last known location"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'find_my_device' and 'insurance_claim_lost'"
+    },
+    "model_output": {
+      "reasoning": "The customer is concerned about losing their Samsung Galaxy A54 device, which suggests they may need assistance in finding it or filing an insurance claim.",
+      "intent_assessment": "Lost/Found Device",
+      "missing_information": [
+        "device model",
+        "last known location"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'find_my_device' and 'insurance_claim_lost'"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0277",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is concerned about the sound quality after dropping their iPhone 15 Pro in water and has no insurance coverage.\",\n  \"intent_assessment\": \"Water Damage\",\n  \"missing_information\": [\"Specific details about the water damage\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'water damage indicator' to understand if there were any visible signs of damage.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is concerned about the sound quality after dropping their iPhone 15 Pro in water and has no insurance coverage.",
+      "intent_assessment": "Water Damage",
+      "missing_information": [
+        "Specific details about the water damage"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage indicator' to understand if there were any visible signs of damage."
+    },
+    "model_output": {
+      "reasoning": "The customer is concerned about the sound quality after dropping their iPhone 15 Pro in water and has no insurance coverage.",
+      "intent_assessment": "Water Damage",
+      "missing_information": [
+        "Specific details about the water damage"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage indicator' to understand if there were any visible signs of damage."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0276",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is concerned about the sound quality after dropping their iPad Air in water, which led to no insurance coverage.\",\n  \"intent_assessment\": \"Water Damage\",\n  \"missing_information\": [\"Specific details about the damage\", \"Details on whether the device can be repaired or replaced\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'water damage first aid' under the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is concerned about the sound quality after dropping their iPad Air in water, which led to no insurance coverage.",
+      "intent_assessment": "Water Damage",
+      "missing_information": [
+        "Specific details about the damage",
+        "Details on whether the device can be repaired or replaced"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage first aid' under the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is concerned about the sound quality after dropping their iPad Air in water, which led to no insurance coverage.",
+      "intent_assessment": "Water Damage",
+      "missing_information": [
+        "Specific details about the damage",
+        "Details on whether the device can be repaired or replaced"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage first aid' under the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0077",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their device running out of battery quickly.\",\n  \"intent_assessment\": \"battery_issues\",\n  \"missing_information\": [\"specific model or brand\", \"device model\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'Google Pixel 7 battery health check' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their device running out of battery quickly.",
+      "intent_assessment": "battery_issues",
+      "missing_information": [
+        "specific model or brand",
+        "device model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Google Pixel 7 battery health check' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their device running out of battery quickly.",
+      "intent_assessment": "battery_issues",
+      "missing_information": [
+        "specific model or brand",
+        "device model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Google Pixel 7 battery health check' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0076",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues related to their device running out of power quickly, which suggests a problem with battery health or charging.\",\n  \"intent_assessment\": \"Battery Health Issue\",\n  \"missing_information\": [\"Specific details about how often the battery runs out\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search available KB topics for 'battery health' and 'low power mode'.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues related to their device running out of power quickly, which suggests a problem with battery health or charging.",
+      "intent_assessment": "Battery Health Issue",
+      "missing_information": [
+        "Specific details about how often the battery runs out"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search available KB topics for 'battery health' and 'low power mode'."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues related to their device running out of power quickly, which suggests a problem with battery health or charging.",
+      "intent_assessment": "Battery Health Issue",
+      "missing_information": [
+        "Specific details about how often the battery runs out"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search available KB topics for 'battery health' and 'low power mode'."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0352",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has successfully resolved their issue by disabling background app refresh, indicating that the problem is likely related to this setting.\",\n  \"intent_assessment\": \"Battery Issue\",\n  \"missing_information\": [],\n  \"action\": \"PROVIDE_STEP\",\n  \"action_detail\": \"Provide more detailed instructions or tips on how to disable background app refresh effectively.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has successfully resolved their issue by disabling background app refresh, indicating that the problem is likely related to this setting.",
+      "intent_assessment": "Battery Issue",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide more detailed instructions or tips on how to disable background app refresh effectively."
+    },
+    "model_output": {
+      "reasoning": "The customer has successfully resolved their issue by disabling background app refresh, indicating that the problem is likely related to this setting.",
+      "intent_assessment": "Battery Issue",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide more detailed instructions or tips on how to disable background app refresh effectively."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0048",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is reporting that their Google Pixel 7 device has been damaged due to water exposure and is experiencing issues with charging and screen flickering.\",\n  \"intent_assessment\": \"Faulty Device\",\n  \"missing_information\": [\"Water Damage History\", \"Battery Level\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Provide detailed information about the water damage history and current battery level to escalate the case appropriately.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting that their Google Pixel 7 device has been damaged due to water exposure and is experiencing issues with charging and screen flickering.",
+      "intent_assessment": "Faulty Device",
+      "missing_information": [
+        "Water Damage History",
+        "Battery Level"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide detailed information about the water damage history and current battery level to escalate the case appropriately."
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting that their Google Pixel 7 device has been damaged due to water exposure and is experiencing issues with charging and screen flickering.",
+      "intent_assessment": "Faulty Device",
+      "missing_information": [
+        "Water Damage History",
+        "Battery Level"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide detailed information about the water damage history and current battery level to escalate the case appropriately."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0034",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their Samsung Galaxy S24 where the screen goes black without any visible damage or drop history. The customer specifically mentions needing instructions on how to perform a force restart.\",\n  \"intent_assessment\": \"Hardware malfunction\",\n  \"missing_information\": [\"Model number\", \"Device model\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'force_restart' in the Samsung Galaxy S24 model\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their Samsung Galaxy S24 where the screen goes black without any visible damage or drop history. The customer specifically mentions needing instructions on how to perform a force restart.",
+      "intent_assessment": "Hardware malfunction",
+      "missing_information": [
+        "Model number",
+        "Device model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'force_restart' in the Samsung Galaxy S24 model"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their Samsung Galaxy S24 where the screen goes black without any visible damage or drop history. The customer specifically mentions needing instructions on how to perform a force restart.",
+      "intent_assessment": "Hardware malfunction",
+      "missing_information": [
+        "Model number",
+        "Device model"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'force_restart' in the Samsung Galaxy S24 model"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0067",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with charging their Samsung Galaxy A54 device due to a clogged charging port.\",\n  \"intent_assessment\": \"Cable/Port Issue\",\n  \"missing_information\": [\"Specific model number or serial number of the device\", \"Details about how the charging port became clogged\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port repair' under the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with charging their Samsung Galaxy A54 device due to a clogged charging port.",
+      "intent_assessment": "Cable/Port Issue",
+      "missing_information": [
+        "Specific model number or serial number of the device",
+        "Details about how the charging port became clogged"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port repair' under the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with charging their Samsung Galaxy A54 device due to a clogged charging port.",
+      "intent_assessment": "Cable/Port Issue",
+      "missing_information": [
+        "Specific model number or serial number of the device",
+        "Details about how the charging port became clogged"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port repair' under the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0042",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing charging issues on their Google Pixel 8 device and mentions it seems unusual.\",\n  \"intent_assessment\": \"DEVICE_ISSUE\",\n  \"missing_information\": [\"Specific details about the charging problems\", \"Current status or symptoms\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask more about the exact nature of the charging issues (e.g., 'Can you describe what happens when you try to charge your phone?') and any other relevant details like date of purchase or model number.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing charging issues on their Google Pixel 8 device and mentions it seems unusual.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Specific details about the charging problems",
+        "Current status or symptoms"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask more about the exact nature of the charging issues (e.g., 'Can you describe what happens when you try to charge your phone?') and any other relevant details like date of purchase or model number."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing charging issues on their Google Pixel 8 device and mentions it seems unusual.",
+      "intent_assessment": "DEVICE_ISSUE",
+      "missing_information": [
+        "Specific details about the charging problems",
+        "Current status or symptoms"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask more about the exact nature of the charging issues (e.g., 'Can you describe what happens when you try to charge your phone?') and any other relevant details like date of purchase or model number."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0275",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues after dropping their phone in water and needs to know about their options without insurance.\",\n  \"intent_assessment\": \"insurance_claim\",\n  \"missing_information\": [\"details of the drop incident\", \"water exposure duration\"],\n  \"action\": \"ESCALATE\",\n  \"action_detail\": \"Provide more details about the drop incident and water exposure time.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues after dropping their phone in water and needs to know about their options without insurance.",
+      "intent_assessment": "insurance_claim",
+      "missing_information": [
+        "details of the drop incident",
+        "water exposure duration"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more details about the drop incident and water exposure time."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues after dropping their phone in water and needs to know about their options without insurance.",
+      "intent_assessment": "insurance_claim",
+      "missing_information": [
+        "details of the drop incident",
+        "water exposure duration"
+      ],
+      "action": "ESCALATE",
+      "action_detail": "Provide more details about the drop incident and water exposure time."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0351",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has reported that their Google Pixel 7 battery issue is resolved after disabling background app refresh.\",\n  \"intent_assessment\": \"Battery Issue Resolution\",\n  \"missing_information\": [],\n  \"action\": \"PROVIDE_STEP\",\n  \"action_detail\": \"Provide step-by-step instructions on how to disable background app refresh.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has reported that their Google Pixel 7 battery issue is resolved after disabling background app refresh.",
+      "intent_assessment": "Battery Issue Resolution",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide step-by-step instructions on how to disable background app refresh."
+    },
+    "model_output": {
+      "reasoning": "The customer has reported that their Google Pixel 7 battery issue is resolved after disabling background app refresh.",
+      "intent_assessment": "Battery Issue Resolution",
+      "missing_information": [],
+      "action": "PROVIDE_STEP",
+      "action_detail": "Provide step-by-step instructions on how to disable background app refresh."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0311",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer has been calling multiple times regarding their iPhone 14 charging issue and has exhausted troubleshooting steps recommended by agents. The customer is seeking assistance from a supervisor.\",\n  \"intent_assessment\": \"customer_support\",\n  \"missing_information\": [\"specific details of the charging issue\", \"current status of previous attempts\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask the customer if they can provide more details about the charging issue (e.g., symptoms, how it started) or ask what progress was made on previous calls.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer has been calling multiple times regarding their iPhone 14 charging issue and has exhausted troubleshooting steps recommended by agents. The customer is seeking assistance from a supervisor.",
+      "intent_assessment": "customer_support",
+      "missing_information": [
+        "specific details of the charging issue",
+        "current status of previous attempts"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask the customer if they can provide more details about the charging issue (e.g., symptoms, how it started) or ask what progress was made on previous calls."
+    },
+    "model_output": {
+      "reasoning": "The customer has been calling multiple times regarding their iPhone 14 charging issue and has exhausted troubleshooting steps recommended by agents. The customer is seeking assistance from a supervisor.",
+      "intent_assessment": "customer_support",
+      "missing_information": [
+        "specific details of the charging issue",
+        "current status of previous attempts"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask the customer if they can provide more details about the charging issue (e.g., symptoms, how it started) or ask what progress was made on previous calls."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0059",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with charging their Samsung Galaxy S23 device, which they have tried to resolve by using both an OEM cable and a third-party cable. They also mention that this problem occurs on their other phone, indicating it might be related to compatibility or hardware issues.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific model number of the Samsung Galaxy S23\", \"details about the charging behavior (e.g., how long it takes to charge, if there are any warning lights)\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging issues' under the 'wireless_charging_setup' section in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with charging their Samsung Galaxy S23 device, which they have tried to resolve by using both an OEM cable and a third-party cable. They also mention that this problem occurs on their other phone, indicating it might be related to compatibility or hardware issues.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model number of the Samsung Galaxy S23",
+        "details about the charging behavior (e.g., how long it takes to charge, if there are any warning lights)"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging issues' under the 'wireless_charging_setup' section in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with charging their Samsung Galaxy S23 device, which they have tried to resolve by using both an OEM cable and a third-party cable. They also mention that this problem occurs on their other phone, indicating it might be related to compatibility or hardware issues.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model number of the Samsung Galaxy S23",
+        "details about the charging behavior (e.g., how long it takes to charge, if there are any warning lights)"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging issues' under the 'wireless_charging_setup' section in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0047",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is reporting that their Samsung Galaxy Tab S9 stopped working after getting wet, specifically mentioning issues with charging and screen flickering.\",\n  \"intent_assessment\": \"Faulty device or damage\",\n  \"missing_information\": [\"Type of water damage (e.g., splash vs. immersion)\", \"Specific details about when the device was wet\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'water damage' in the available KB topics to find relevant solutions or troubleshooting steps.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting that their Samsung Galaxy Tab S9 stopped working after getting wet, specifically mentioning issues with charging and screen flickering.",
+      "intent_assessment": "Faulty device or damage",
+      "missing_information": [
+        "Type of water damage (e.g., splash vs. immersion)",
+        "Specific details about when the device was wet"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage' in the available KB topics to find relevant solutions or troubleshooting steps."
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting that their Samsung Galaxy Tab S9 stopped working after getting wet, specifically mentioning issues with charging and screen flickering.",
+      "intent_assessment": "Faulty device or damage",
+      "missing_information": [
+        "Type of water damage (e.g., splash vs. immersion)",
+        "Specific details about when the device was wet"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'water damage' in the available KB topics to find relevant solutions or troubleshooting steps."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0372",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer seems concerned about losing their Google Pixel 8 and needs help understanding why it might be missing.\",\n  \"intent_assessment\": \"Lost/Found Device\",\n  \"missing_information\": [\"device model\", \"last known location\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask more details about the device model (e.g., color, size) and the last known location where they were last seen or used.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer seems concerned about losing their Google Pixel 8 and needs help understanding why it might be missing.",
+      "intent_assessment": "Lost/Found Device",
+      "missing_information": [
+        "device model",
+        "last known location"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask more details about the device model (e.g., color, size) and the last known location where they were last seen or used."
+    },
+    "model_output": {
+      "reasoning": "The customer seems concerned about losing their Google Pixel 8 and needs help understanding why it might be missing.",
+      "intent_assessment": "Lost/Found Device",
+      "missing_information": [
+        "device model",
+        "last known location"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask more details about the device model (e.g., color, size) and the last known location where they were last seen or used."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0032",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing an issue with their iPad Pro where the screen goes black without any visible damage like cracks or drops. They specifically mention that the power button does not work either. The customer needs guidance on how to perform a force restart.\",\n  \"intent_assessment\": \"battery_calibration\",\n  \"missing_information\": [\"specific model of iPad Pro\", \"manufacturer\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'force restart steps' in the available KB topics related to iPads.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing an issue with their iPad Pro where the screen goes black without any visible damage like cracks or drops. They specifically mention that the power button does not work either. The customer needs guidance on how to perform a force restart.",
+      "intent_assessment": "battery_calibration",
+      "missing_information": [
+        "specific model of iPad Pro",
+        "manufacturer"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'force restart steps' in the available KB topics related to iPads."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing an issue with their iPad Pro where the screen goes black without any visible damage like cracks or drops. They specifically mention that the power button does not work either. The customer needs guidance on how to perform a force restart.",
+      "intent_assessment": "battery_calibration",
+      "missing_information": [
+        "specific model of iPad Pro",
+        "manufacturer"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'force restart steps' in the available KB topics related to iPads."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0098",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer needs a replacement battery or phone due to their Motorola Edge device's battery health being below acceptable levels.\",\n  \"intent_assessment\": \"battery_failure\",\n  \"missing_information\": [\"specific model number of the Motorola Edge\", \"insurance details\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'low_battery' claims on the Motorola website\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer needs a replacement battery or phone due to their Motorola Edge device's battery health being below acceptable levels.",
+      "intent_assessment": "battery_failure",
+      "missing_information": [
+        "specific model number of the Motorola Edge",
+        "insurance details"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'low_battery' claims on the Motorola website"
+    },
+    "model_output": {
+      "reasoning": "The customer needs a replacement battery or phone due to their Motorola Edge device's battery health being below acceptable levels.",
+      "intent_assessment": "battery_failure",
+      "missing_information": [
+        "specific model number of the Motorola Edge",
+        "insurance details"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'low_battery' claims on the Motorola website"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0066",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPhone 15 Pro not being able to charge due to debris in the charging port. They want advice on how to safely clean this area.\",\n  \"intent_assessment\": \"Battery replacement claim\",\n  \"missing_information\": [\"Type of debris found\", \"Current state of the phone\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'charging port cleaning' under the 'charging_port_cleaning' topic.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 Pro not being able to charge due to debris in the charging port. They want advice on how to safely clean this area.",
+      "intent_assessment": "Battery replacement claim",
+      "missing_information": [
+        "Type of debris found",
+        "Current state of the phone"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' under the 'charging_port_cleaning' topic."
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPhone 15 Pro not being able to charge due to debris in the charging port. They want advice on how to safely clean this area.",
+      "intent_assessment": "Battery replacement claim",
+      "missing_information": [
+        "Type of debris found",
+        "Current state of the phone"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'charging port cleaning' under the 'charging_port_cleaning' topic."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0307",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer expresses concern about their Motorola Edge device due to swelling in the battery area.\",\n  \"intent_assessment\": \"battery malfunction\",\n  \"missing_information\": [\"specific model or serial number\", \"current battery health status\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'swelling battery' on the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer expresses concern about their Motorola Edge device due to swelling in the battery area.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model or serial number",
+        "current battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'swelling battery' on the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer expresses concern about their Motorola Edge device due to swelling in the battery area.",
+      "intent_assessment": "battery malfunction",
+      "missing_information": [
+        "specific model or serial number",
+        "current battery health status"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'swelling battery' on the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0379",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is concerned about losing their Motorola Edge device and has tried to locate it but hasn't found it yet.\",\n  \"intent_assessment\": \"Lost/Found Device\",\n  \"missing_information\": [\"device serial number\", \"last known location\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'lost device' in the available knowledge base topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is concerned about losing their Motorola Edge device and has tried to locate it but hasn't found it yet.",
+      "intent_assessment": "Lost/Found Device",
+      "missing_information": [
+        "device serial number",
+        "last known location"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'lost device' in the available knowledge base topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is concerned about losing their Motorola Edge device and has tried to locate it but hasn't found it yet.",
+      "intent_assessment": "Lost/Found Device",
+      "missing_information": [
+        "device serial number",
+        "last known location"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'lost device' in the available knowledge base topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0075",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is reporting that their Google Pixel 7 is turning off frequently, which could be due to battery issues or other factors like low power mode.\",\n  \"intent_assessment\": \"Battery-related issue\",\n  \"missing_information\": [\"Specific details about when the device turns off\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask more about the frequency and duration of the device turning off so we can better understand the problem.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is reporting that their Google Pixel 7 is turning off frequently, which could be due to battery issues or other factors like low power mode.",
+      "intent_assessment": "Battery-related issue",
+      "missing_information": [
+        "Specific details about when the device turns off"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask more about the frequency and duration of the device turning off so we can better understand the problem."
+    },
+    "model_output": {
+      "reasoning": "The customer is reporting that their Google Pixel 7 is turning off frequently, which could be due to battery issues or other factors like low power mode.",
+      "intent_assessment": "Battery-related issue",
+      "missing_information": [
+        "Specific details about when the device turns off"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask more about the frequency and duration of the device turning off so we can better understand the problem."
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0099",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer needs a replacement battery due to low battery health on their Samsung Galaxy S24.\",\n  \"intent_assessment\": \"battery-related\",\n  \"missing_information\": [\"customer's contact details\", \"insurance policy number\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'Samsung Galaxy S24 battery replacement claim' within the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer needs a replacement battery due to low battery health on their Samsung Galaxy S24.",
+      "intent_assessment": "battery-related",
+      "missing_information": [
+        "customer's contact details",
+        "insurance policy number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy S24 battery replacement claim' within the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer needs a replacement battery due to low battery health on their Samsung Galaxy S24.",
+      "intent_assessment": "battery-related",
+      "missing_information": [
+        "customer's contact details",
+        "insurance policy number"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy S24 battery replacement claim' within the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0097",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing low battery health on their Samsung Galaxy A54 device and needs either a replacement battery or a new phone due to the low battery life.\",\n  \"intent_assessment\": \"Battery Replacement\",\n  \"missing_information\": [\"battery status\", \"insurance details\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'Samsung Galaxy A54 battery replacement claim' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing low battery health on their Samsung Galaxy A54 device and needs either a replacement battery or a new phone due to the low battery life.",
+      "intent_assessment": "Battery Replacement",
+      "missing_information": [
+        "battery status",
+        "insurance details"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy A54 battery replacement claim' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing low battery health on their Samsung Galaxy A54 device and needs either a replacement battery or a new phone due to the low battery life.",
+      "intent_assessment": "Battery Replacement",
+      "missing_information": [
+        "battery status",
+        "insurance details"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'Samsung Galaxy A54 battery replacement claim' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0060",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is experiencing issues with their iPad Pro not taking a charge, despite using both an OEM cable and a third-party cable successfully on another device.\",\n  \"intent_assessment\": \"battery_replacement_claim\",\n  \"missing_information\": [\"specific model number or serial number of the iPad Pro\"],\n  \"action\": \"SEARCH_KB\",\n  \"action_detail\": \"Search for 'iPad Pro battery replacement' in the available KB topics\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is experiencing issues with their iPad Pro not taking a charge, despite using both an OEM cable and a third-party cable successfully on another device.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model number or serial number of the iPad Pro"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Pro battery replacement' in the available KB topics"
+    },
+    "model_output": {
+      "reasoning": "The customer is experiencing issues with their iPad Pro not taking a charge, despite using both an OEM cable and a third-party cable successfully on another device.",
+      "intent_assessment": "battery_replacement_claim",
+      "missing_information": [
+        "specific model number or serial number of the iPad Pro"
+      ],
+      "action": "SEARCH_KB",
+      "action_detail": "Search for 'iPad Pro battery replacement' in the available KB topics"
+    },
+    "valid": true
+  },
+  {
+    "scenario_id": "scn_0371",
+    "raw_text": "```json\n{\n  \"reasoning\": \"The customer is expressing concern about losing their phone and has tried to locate it but hasn't found it yet.\",\n  \"intent_assessment\": \"LostOrStolen\",\n  \"missing_information\": [\"last_known_location\", \"find_my_attempted\"],\n  \"action\": \"ASK_CLARIFICATION\",\n  \"action_detail\": \"Ask if the customer has tried using any apps or services that allow them to track or remotely wipe their device.\"\n}\n```",
+    "parsed": {
+      "reasoning": "The customer is expressing concern about losing their phone and has tried to locate it but hasn't found it yet.",
+      "intent_assessment": "LostOrStolen",
+      "missing_information": [
+        "last_known_location",
+        "find_my_attempted"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask if the customer has tried using any apps or services that allow them to track or remotely wipe their device."
+    },
+    "model_output": {
+      "reasoning": "The customer is expressing concern about losing their phone and has tried to locate it but hasn't found it yet.",
+      "intent_assessment": "LostOrStolen",
+      "missing_information": [
+        "last_known_location",
+        "find_my_attempted"
+      ],
+      "action": "ASK_CLARIFICATION",
+      "action_detail": "Ask if the customer has tried using any apps or services that allow them to track or remotely wipe their device."
+    },
+    "valid": true
+  }
+]

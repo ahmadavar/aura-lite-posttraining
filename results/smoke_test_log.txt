@@ -1,0 +1,27 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+Device: mps
+Training on 20 scenarios
+Loading model from /Users/ahmadavar/Desktop/aura-lite-posttraining/scripts/../models/qwen2.5-1.5b-instruct...
+Model loaded.
+
+=== GRPO Training ===
+Dataset size: 20 prompts
+Reward weights: {'intent_accuracy': 0.2, 'action_correctness': 0.25, 'missing_info_recall': 0.15, 'clarification_quality': 0.15, 'efficiency': 0.1, 'should_not_penalty': 0.1, 'format_compliance': 0.05}
+Starting GRPO training...
+  0%|          | 0/20 [00:00<?, ?it/s]/usr/local/lib/python3.11/site-packages/transformers/pytorch_utils.py:339: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  test_elements = torch.tensor(test_elements)
+  5%|▌         | 1/20 [00:48<15:24, 48.67s/it] 10%|█         | 2/20 [01:26<12:39, 42.20s/it] 15%|█▌        | 3/20 [02:11<12:21, 43.60s/it] 20%|██        | 4/20 [02:54<11:31, 43.24s/it] 25%|██▌       | 5/20 [05:10<19:12, 76.84s/it]                                               25%|██▌       | 5/20 [05:11<19:12, 76.84s/it] 30%|███       | 6/20 [06:13<16:48, 72.06s/it] 35%|███▌      | 7/20 [06:47<12:53, 59.51s/it] 40%|████      | 8/20 [07:32<10:59, 54.92s/it] 45%|████▌     | 9/20 [08:09<09:04, 49.49s/it] 50%|█████     | 10/20 [08:52<07:53, 47.35s/it]                                                50%|█████     | 10/20 [08:52<07:53, 47.35s/it] 55%|█████▌    | 11/20 [09:33<06:49, 45.51s/it] 60%|██████    | 12/20 [10:15<05:54, 44.30s/it] 65%|██████▌   | 13/20 [10:50<04:50, 41.54s/it] 70%|███████   | 14/20 [11:27<04:01, 40.26s/it] 75%|███████▌  | 15/20 [12:03<03:14, 38.99s/it]                                                75%|███████▌  | 15/20 [12:04<03:14, 38.99s/it] 80%|████████  | 16/20 [12:40<02:33, 38.29s/it] 85%|████████▌ | 17/20 [13:31<02:06, 42.25s/it] 90%|█████████ | 18/20 [14:09<01:21, 40.81s/it] 95%|█████████▌| 19/20 [19:14<02:00, 120.28s/it]100%|██████████| 20/20 [20:18<00:00, 103.30s/it]                                                100%|██████████| 20/20 [20:18<00:00, 103.30s/it]                                                100%|██████████| 20/20 [20:19<00:00, 103.30s/it]100%|██████████| 20/20 [20:19<00:00, 61.00s/it] 
+  [reward] sid=scn_0245 -> 0.7647 (action=SEARCH_KB, intent=lost_stolen) [intent_accuracy=1.00, action_correctness=0.50, missing_info_recall=0.50, clarification_quality=0.00, efficiency=1.00, should_not_penalty=1.00, format_compliance=1.00]
+  [reward] sid=scn_0245 -> 0.5882 (action=ROUTE_CLAIM, intent=lost_stolen) [intent_accuracy=1.00, action_correctness=0.00, missing_info_recall=1.00, clarification_quality=0.00, efficiency=1.00, should_not_penalty=0.00, format_compliance=1.00]
+  [reward] sid=scn_0245 -> 0.8529 (action=SEARCH_KB, intent=lost_stolen) [intent_accuracy=1.00, action_correctness=0.50, missing_info_recall=1.00, clarification_quality=0.00, efficiency=1.00, should_not_penalty=1.00, format_compliance=1.00]
+  [reward] sid=scn_0245 -> 0.6765 (action=PROVIDE_STEP, intent=locate_device) [intent_accuracy=0.00, action_correctness=1.00, missing_info_recall=0.50, clarification_quality=0.00, efficiency=1.00, should_not_penalty=1.00, format_compliance=1.00]
+  [reward] sid=scn_0194 -> 0.2941 (action=SEARCH_KB, intent=black_screen) [intent_accuracy=0.00, action_correctness=0.00, missing_info_recall=0.00, clarification_quality=0.00, efficiency=1.00, should_not_penalty=1.00, format_compliance=1.00]
+{'loss': -0.0, 'grad_norm': 0.5120183229446411, 'learning_rate': 8.000000000000001e-06, 'rewards/reward_fn': 0.5764699935913086, 'reward': 0.5764699935913086, 'reward_std': 0.11603584736585618, 'completion_length': 120.4, 'kl': -2.8729438781738283e-06, 'epoch': 0.25}
+{'loss': 0.0, 'grad_norm': 0.5068409442901611, 'learning_rate': 5.500000000000001e-06, 'rewards/reward_fn': 0.46946999430656433, 'reward': 0.46946999430656433, 'reward_std': 0.09545881450176238, 'completion_length': 102.45, 'kl': 2.3913383483886718e-05, 'epoch': 0.5}
+{'loss': 0.0, 'grad_norm': 0.0064136371947824955, 'learning_rate': 3e-06, 'rewards/reward_fn': 0.5154349982738495, 'reward': 0.5154349982738495, 'reward_std': 0.15869827568531036, 'completion_length': 97.9, 'kl': 9.076595306396484e-05, 'epoch': 0.75}
+{'loss': 0.0, 'grad_norm': 0.005963861010968685, 'learning_rate': 5.000000000000001e-07, 'rewards/reward_fn': 0.6464650154113769, 'reward': 0.6464650154113769, 'reward_std': 0.10839535370469093, 'completion_length': 112.55, 'kl': 9.044408798217774e-05, 'epoch': 1.0}
+{'train_runtime': 1220.1515, 'train_samples_per_second': 0.016, 'train_steps_per_second': 0.016, 'train_loss': 5.088029047328746e-06, 'epoch': 1.0}
+Model saved to /Users/ahmadavar/Desktop/aura-lite-posttraining/scripts/../models/trained_rl
+
+Training complete in 20.4 minutes
