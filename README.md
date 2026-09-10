@@ -1,5 +1,7 @@
 # Aura Lite: Post-Training a Customer Support Decision Specialist with GRPO
 
+**[Video Demo](https://www.loom.com/share/64a74b534b19478ab98214b40ce81cb1)**
+
 This project applies Group Relative Policy Optimization (GRPO) to post-train a 1.5B-parameter language model as a customer support triage agent. Given a customer message about a device issue, the model selects the correct next action (ask clarification, search knowledge base, provide a troubleshooting step, route a claim, escalate, or mark complete) and diagnoses the underlying problem. GRPO post-training achieved a composite reward of **0.657** vs **0.616** from the best prompt engineering baseline, with the largest gain in intent accuracy (**+8.5 percentage points**), demonstrating that reinforcement learning extracts behavioral signal that instruction-based prompting cannot.
 
 ## Results
