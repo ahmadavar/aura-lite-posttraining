@@ -3,6 +3,15 @@
 **Date:** 2026-09-07
 **Status:** NO EXPERIMENTS RUN — all values are NOT MEASURED
 
+> **SUPERSEDED — written 2026-09-07, before any experiments were run.**
+> Every "NOT MEASURED" cell below has since been filled, and the post-trained column is
+> **GRPO**, not DPO. Measured: composite **0.657** (GRPO) vs 0.616 (engineered) vs 0.441
+> (random); intent accuracy 66.3% vs 57.8%; macro F1 0.303 vs 0.258.
+> Results: `docs/FINAL_EXPERIMENT_RESULTS.md`. Kept unedited as the **pre-registered**
+> comparison plan — the success criteria below were written before seeing any result.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## Comparison Table

@@ -3,6 +3,17 @@
 **Date:** 2026-09-07
 **Status:** Pre-experiment — categories and framework defined, no real examples yet
 
+> **SUPERSEDED — written 2026-09-07, before any training run.**
+> The seven "NOT MEASURED" verdicts below were later measured. On the 83-scenario test set:
+> no collapse to ASK_CLARIFICATION (5% predicted, not >90%), but **SEARCH_KB collapse did
+> occur** (78% predicted vs 20% true), COMPLETE was never predicted (0/6), and missing-info
+> recall came out **0.000**. Template memorisation is confirmed by the challenge set —
+> macro F1 falls 0.303 → 0.107 on novel phrasings.
+> Results: `docs/FINAL_EXPERIMENT_RESULTS.md`. Kept unedited as the **pre-registered**
+> failure taxonomy — these categories were predicted before the run, and most proved correct.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## Predicted Failure Categories

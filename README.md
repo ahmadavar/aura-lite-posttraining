@@ -42,6 +42,7 @@ aura-lite-posttraining/
 │   ├── processed/              # Train/val/test splits
 │   └── challenge/              # 26-scenario novel-phrasing challenge set
 ├── docs/                       # Technical write-ups and experiment analysis
+│   ├── README.md               # index — which docs are pre- vs post-training
 │   ├── FINAL_EXPERIMENT_RESULTS.md
 │   ├── RL_TECHNICAL_STATEMENT_ONE_PAGE.md
 │   ├── RL_ARCHITECTURE.md

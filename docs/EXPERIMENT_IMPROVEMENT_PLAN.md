@@ -2,6 +2,14 @@
 
 **Date:** 2026-09-07
 
+> **SUPERSEDED — written 2026-09-07. All P0 items below were implemented.**
+> P0-1 ("Fix or Abandon GRPO Reward Function") was resolved via **Option A**: the GRPO reward
+> now uses `RewardCalculator` with scenario ground truth (`train.py`, `make_grpo_reward_fn`).
+> Dataset rebalance, unified evaluator, per-class metrics and temperature alignment were also
+> completed. Results: `docs/FINAL_EXPERIMENT_RESULTS.md`.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## P0 — MUST FIX BEFORE PRESENTING

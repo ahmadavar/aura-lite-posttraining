@@ -1,5 +1,12 @@
 # The Story of This Project
 
+> **WRITTEN DURING TRAINING (2026-09-08).** The closing section says the model "is training
+> right now" — it finished 2026-09-09. Outcome: GRPO beat the best prompt on every headline
+> metric (composite **0.657** vs 0.616; intent 66.3% vs 57.8%; macro F1 0.303 vs 0.258),
+> while the SEARCH_KB bias persisted. Full write-up: `docs/FINAL_EXPERIMENT_RESULTS.md`.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## The Problem I Was Trying to Solve

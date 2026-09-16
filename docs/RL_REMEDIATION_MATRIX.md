@@ -3,6 +3,15 @@
 **Date:** 2026-09-08
 **Purpose:** Map every audit finding to its RL-relevant fix before implementation
 
+> **SUPERSEDED — written 2026-09-08. Every CRITICAL and HIGH item below was implemented
+> before the training run.** The "Current State" column describes the code *as it was then*:
+> the GRPO reward was rewired to `RewardCalculator` via `scenario_id` lookup,
+> `scripts/evaluate.py` was created, per-class metrics and the confusion matrix were added,
+> and all evaluation was fixed at temp=0.3.
+> Verification: `results/grpo_full_training_log.txt`, `docs/FINAL_EXPERIMENT_RESULTS.md`.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 | # | Finding | Severity | Current State | RL-Relevant Fix | Files Affected | Verification |

@@ -3,6 +3,13 @@
 **Date:** 2026-09-07
 **Status:** Framework ready — fill in actual numbers after experiments
 
+> **SUPERSEDED — written 2026-09-07, before the method was final.**
+> This draft argues for **DPO** and cites **194 / 76 / 314** scenario counts. The project ran
+> **GRPO** on **266 train / 43 val / 83 test**. For current answers use
+> `docs/RL_STAGE_DEFENSE.md`. Kept unedited as a record of the decision process.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## PHASE 12 — INTERVIEW DEFENSE ANSWERS

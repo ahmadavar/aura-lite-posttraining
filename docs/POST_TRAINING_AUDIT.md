@@ -5,6 +5,14 @@
 **Repository:** aura-lite-posttraining/
 **Status:** Code complete, NO experiments run yet
 
+> **SUPERSEDED — written 2026-09-07** (see "NO experiments run yet" above).
+> The GRPO reward-path findings were fixed before the Sep 8–9 run; the trained-model
+> evaluator, per-class metrics, confusion matrix and temperature alignment were all
+> implemented. Results: `docs/FINAL_EXPERIMENT_RESULTS.md`.
+> Kept unedited as the pre-experiment critical review.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## PHASE 1 — REPOSITORY FORENSICS

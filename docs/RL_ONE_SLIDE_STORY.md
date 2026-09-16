@@ -2,6 +2,12 @@
 
 **Status:** Baselines complete, RL training in progress
 
+> **STATUS LINE ABOVE IS OUT OF DATE — training completed 2026-09-09.**
+> The numbers in the layout below are the final measured results: GRPO composite **0.657**
+> vs 0.616 engineered. See `docs/FINAL_EXPERIMENT_RESULTS.md`.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## Layout

@@ -2,6 +2,16 @@
 
 **Date:** 2026-09-07
 
+> **SUPERSEDED — written 2026-09-07, before any training run.**
+> The "GRPO reward is BROKEN / grade F" finding below was **acted on and fixed before
+> training**: `scripts/train.py` builds `make_grpo_reward_fn(scenarios, reward_calc)` and
+> passes it to `GRPOTrainer`, so training scored against the full 7-component
+> `RewardCalculator`. Verified in `results/grpo_full_training_log.txt`, which logs
+> per-component breakdowns and rewards up to **0.9118** — above the 0.65 ceiling the
+> format-only version could reach. Kept unedited as the record of the audit that caught it.
+>
+> *— Status note added 2026-09-16. Everything below this line is the original document, unmodified.*
+
 ---
 
 ## Overview
